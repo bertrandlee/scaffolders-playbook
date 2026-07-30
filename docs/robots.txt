@@ -1,0 +1,7 @@
+# PRE-LAUNCH: indexing disabled until public launch.
+# To go live, replace this whole file with:
+#   User-agent: *
+#   Allow: /
+#   Sitemap: https://playbook.brightraven.ai/sitemap.xml
+User-agent: *
+Disallow: /

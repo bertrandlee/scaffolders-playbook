@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.13">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Bertrand Lee">
+<meta name="dcterms.date" content="2026-07-30">
+
+<title>The Scaffolder’s Playbook</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./beginner.html" rel="next">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-ac077c1e730dfeb5e42400639d17284e.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-672462fdcb365bbc6454bd413249eca7.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar docked quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">The Scaffolder’s Playbook</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">The Scaffolder’s Playbook</a> 
+        <div class="sidebar-tools-main tools-wide">
+    <a href="https://github.com/bertrandlee/scaffolders-playbook" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+    <div class="dropdown">
+      <a href="" title="Download" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Download"><i class="bi bi-download"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="./The-Scaffolder-s-Playbook.pdf">
+              <i class="bi bi-file-pdf pe-1"></i>
+            Download PDF
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="./The-Scaffolder-s-Playbook.epub">
+              <i class="bi bi-journal pe-1"></i>
+            Download ePub
+            </a>
+          </li>
+      </ul>
+    </div>
+    <div class="dropdown">
+      <a href="" title="Share" id="quarto-navigation-tool-dropdown-1" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Share"><i class="bi bi-share"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-1">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://twitter.com/intent/tweet?url=|url|">
+              <i class="bi bi-twitter pe-1"></i>
+            Twitter
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://www.linkedin.com/sharing/share-offsite/?url=|url|">
+              <i class="bi bi-linkedin pe-1"></i>
+            LinkedIn
+            </a>
+          </li>
+      </ul>
+    </div>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">The Scaffolder’s Playbook</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./beginner.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">BEGINNER</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./intermediate.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">INTERMEDIATE</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./advanced.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">ADVANCED</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./elite.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">ELITE — GATED</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./appendices.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">APPENDIX: Patterns at a Glance</span></span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#the-scaffolders-playbook" id="toc-the-scaffolders-playbook" class="nav-link active" data-scroll-target="#the-scaffolders-playbook"><span class="header-section-number">1</span> The Scaffolder’s Playbook</a>
+  <ul class="collapse">
+  <li><a href="#beyond-prompt-engineering-to-workflow-architecture" id="toc-beyond-prompt-engineering-to-workflow-architecture" class="nav-link" data-scroll-target="#beyond-prompt-engineering-to-workflow-architecture"><span class="header-section-number">1.1</span> Beyond Prompt Engineering to Workflow Architecture</a></li>
+  </ul></li>
+  <li><a href="#about-the-author" id="toc-about-the-author" class="nav-link" data-scroll-target="#about-the-author"><span class="header-section-number">2</span> ABOUT THE AUTHOR</a></li>
+  <li><a href="#preface-why-i-wrote-this-book" id="toc-preface-why-i-wrote-this-book" class="nav-link" data-scroll-target="#preface-why-i-wrote-this-book"><span class="header-section-number">3</span> PREFACE: Why I Wrote This Book</a>
+  <ul class="collapse">
+  <li><a href="#how-to-self-classify-borrowed-from-skill-rating-systems-like-pickleballs-dupr" id="toc-how-to-self-classify-borrowed-from-skill-rating-systems-like-pickleballs-dupr" class="nav-link" data-scroll-target="#how-to-self-classify-borrowed-from-skill-rating-systems-like-pickleballs-dupr"><span class="header-section-number">3.0.1</span> How to Self-Classify (borrowed from skill-rating systems like pickleball’s DUPR)</a></li>
+  </ul></li>
+  <li><a href="#acknowledgements" id="toc-acknowledgements" class="nav-link" data-scroll-target="#acknowledgements"><span class="header-section-number">4</span> ACKNOWLEDGEMENTS</a>
+  <ul class="collapse">
+  <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction"><span class="header-section-number">4.1</span> INTRODUCTION</a>
+  <ul class="collapse">
+  <li><a href="#how-this-book-is-organized" id="toc-how-this-book-is-organized" class="nav-link" data-scroll-target="#how-this-book-is-organized"><span class="header-section-number">4.1.1</span> How This Book Is Organized</a></li>
+  <li><a href="#the-one-principle-underneath-everything" id="toc-the-one-principle-underneath-everything" class="nav-link" data-scroll-target="#the-one-principle-underneath-everything"><span class="header-section-number">4.1.2</span> The One Principle Underneath Everything</a></li>
+  <li><a href="#privacy-attribution-rule-governs-all-drafting" id="toc-privacy-attribution-rule-governs-all-drafting" class="nav-link" data-scroll-target="#privacy-attribution-rule-governs-all-drafting"><span class="header-section-number">4.1.3</span> Privacy &amp; Attribution Rule (governs all drafting)</a></li>
+  </ul></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">The Scaffolder’s Playbook</h1>
+<p class="subtitle lead">Beyond Prompt Engineering to Workflow Architecture</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Bertrand Lee </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">July 30, 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="the-scaffolders-playbook" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> The Scaffolder’s Playbook</h1>
+<section id="beyond-prompt-engineering-to-workflow-architecture" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="beyond-prompt-engineering-to-workflow-architecture"><span class="header-section-number">1.1</span> Beyond Prompt Engineering to Workflow Architecture</h2>
+<p><strong>Bertrand Lee</strong></p>
+<p><em>First Edition</em></p>
+<hr>
+<p><em>Draft revised 27 July 2026 (SST) — if you have an earlier copy, this one supersedes it.</em></p>
+<hr>
+<p><em>Copyright © 2026 BrightRaven Pte Ltd, Singapore</em></p>
+<p><em>Published by BrightRaven Pte Ltd (trading as BrightRaven.ai)</em></p>
+<p><em>ISBN [pending — NLB application in progress] (e-book)</em></p>
+<p><em>First published 2026</em></p>
+<hr>
+<p><em>This work is licensed under the Creative Commons Attribution–NonCommercial 4.0 International License (CC BY-NC 4.0). You are free to share and adapt this material for non-commercial purposes, provided you give appropriate credit, link to the license, and indicate if changes were made. Commercial use is not permitted without the author’s written consent.</em></p>
+<p><em>Full license: creativecommons.org/licenses/by-nc/4.0</em></p>
+<p><em>This Creative Commons grant is irrevocable and applies to all readers. Separately, the author retains the right to license the work for commercial use; commercial use by others requires the author’s written consent.</em></p>
+<p><em>Internal use within organisations is expressly permitted: you may copy, circulate and use this book for training, onboarding and reference inside your organisation — commercial or otherwise — at no charge and without seeking permission. What the NonCommercial term withholds is selling this book, or selling a work derived from it.</em></p>
+<p><em>The Scaffolder’s Playbook is intentionally forkable for non-commercial use. If you improve it, add patterns, or adapt it for a specific domain, the author asks — but does not require — that you share your version under the same terms.</em></p>
+<hr>
+<p><em>Disclaimer</em></p>
+<p><em>This book is an independent publication. It is not affiliated with, endorsed by, sponsored by, or produced in association with Google LLC, Anthropic PBC, OpenAI LP, Microsoft Corporation, or any other technology company or platform provider. Product, platform, and company names are used descriptively and nominatively, to refer to the actual products discussed, in accordance with honest commercial practices. Their use does not imply affiliation, sponsorship, or endorsement.</em></p>
+<p><em>All observations about AI platform behaviour, capabilities, and limitations in this book are based solely on the author’s personal experience using publicly available consumer products and services, in the same manner available to any member of the public. Nothing in this book is based on, derived from, or intended to reveal any proprietary, confidential, or non-public information of any company. The author has not been granted any special access to internal systems, source code, training data, or confidential documentation of any AI company.</em></p>
+<p><em>The observations, assessments, and criticisms in this book are the author’s own honest opinions, formed in good faith from personal experience on the dates indicated. They are offered for discussion and education and are not assertions of fact about the internal practices of any company.</em></p>
+<p><em>Platform capabilities, model behaviours, pricing, and features described in this book reflect the author’s observations as of the dates indicated and may have changed since publication. This book makes no representation that any described behaviour is a complete, accurate, or current characterisation of any platform. Readers should verify current capabilities directly with the relevant platform provider.</em></p>
+<p><em>Nothing in this book constitutes professional medical, legal, financial, investment, or other regulated advice. In matters requiring professional judgment — including but not limited to medical diagnosis, legal proceedings, financial planning, or regulated compliance decisions — readers must consult a qualified professional. AI tools do not replace professional expertise.</em></p>
+<p><em>This book is provided “as is”, without warranties of any kind, express or implied.</em></p>
+<p><em>To the maximum extent permitted by applicable law, the author and publisher disclaim all liability for any loss, damage, or claim arising directly or indirectly from reliance on this book or on AI outputs generated using techniques described herein.</em></p>
+<hr>
+</section>
+</section>
+<section id="about-the-author" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> ABOUT THE AUTHOR</h1>
+<p>Bertrand Lee started at Creative Technology, writing its first open-source Linux audio driver for the Sound Blaster Live! family and working with kernel developers to get it upstreamed. At Microsoft he was principal author of the draft USB Video Class specification — including the Extension Unit mechanism that let vendors add their own controls without breaking the generic driver — co-founded the USB Video Device Working Group with partners including Logitech, stayed through specification 1.0 in September 2003, and built Windows’ UVC driver. Twenty-three years later it is still a reason a webcam works when you plug it in: Windows, macOS and Linux provide built-in class support for compliant UVC devices, and Android supports external UVC cameras on conforming devices. It turns up well beyond webcams — conferencing systems, dashcams, drones, medical endoscopes, the tracking cameras inside VR headsets.</p>
+<p>His path into natural-language processing began at VoiceBox, building in-car voice assistants years before phones made them familiar — statistical NLP and grammar-driven parsing on embedded automotive hardware, before deep learning changed the field. He later led video-platform engineering at Panopto, in Seattle and Hong Kong.</p>
+<p>In 2018, two decades into his career, he went back to school for the methods that had displaced the ones he knew: four months full-time at a machine learning bootcamp. As a Smart Nation Fellow at GovTech he then helped lead the team that built VICA, the Singapore government’s conversational-AI platform, which replaced the earlier Ask Jamie chatbots. He chose its NLP engine by benchmarking eight commercial platforms against a common test set rather than by reputation. Engine-agnosticism was a requirement set for the platform; he built the plugin architecture and migration tooling that made it achievable, letting the engine be swapped without a rebuild. VICA launched in December 2020.</p>
+<p>He was not an outsider who learned AI, but a domain expert who went back to being a beginner in the technique. That is why these patterns were discovered rather than theorized — and why none of it is a prerequisite. The argument is not that the author is exceptional, but that the method can be handed to anyone.</p>
+<p>He lives in Singapore, runs BrightRaven.ai, an AI consulting firm, and gives pro bono talks on AI in Singapore schools.</p>
+<p><em>More: linkedin.com/in/bertrandlee · <a href="https://www.tech.gov.sg/technews/a-conversation-with-bertrand-lee/">“A Conversation with Bertrand Lee,” GovTech Tech News</a></em></p>
+<hr>
+<p><strong>A note on how this book was written.</strong> The experiences, judgment, and patterns in this book are the author’s own — discovered, tested, and vetted across real projects, not theorized. The prose itself was drafted collaboratively with AI, working from his direction and firsthand accounts, then reviewed and revised by him before publication. If that distinction matters to you as a reader — and this book’s own argument about honest disclosure suggests it might — you now have it stated plainly rather than left for you to guess.</p>
+<hr>
+</section>
+<section id="preface-why-i-wrote-this-book" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> PREFACE: Why I Wrote This Book</h1>
+<p>I wrote this book because a frustration with my own investing and long-term financial planning — tracking requirements that span years, reconciling records scattered across accounts — accidentally taught me something too useful to keep to myself. The fix was simple: stop treating the AI like an oracle, start treating it like a durable external store. I took a spreadsheet that had grown into a mess of notes and made the model organize its own memory into a structured, human-auditable ledger. It worked. That day, I stopped one-shotting.</p>
+<p>This book does two jobs at once: it’s a manual for techniques that already work, and a method for finding the ones that don’t exist yet. Those aren’t in tension — the techniques here exist to train a discovery reflex, not just to be copied. Learn the foundations, improve on them, and put your own back into the commons.</p>
+<p><strong>This is workflow engineering, not prompt engineering — and the difference matters.</strong> Prompt engineering optimizes one question for one better answer; it operates at the level of the <em>turn</em>. Workflow engineering operates <em>above</em> the turn: the memory that outlives a conversation, the file that survives a thread, the check that fires on a future edit, the reconciliation that runs weeks later. It’s the same move software engineers call a design pattern — a recurring solution to a recurring problem that you don’t invent so much as <em>notice</em>. Work this way long enough and you’ll realize you’ve been using a structure that already has a name, or you’ll have quietly named one yourself. This book catalogs the ones I noticed. Its bigger job is teaching you to notice your own.</p>
+<p>If you want the definitive treatment of the layer below this one, it already exists: DAIR.AI’s Prompt Engineering Guide (promptingguide.ai) catalogs prompting technique thoroughly and keeps it current. This book starts where that one stops — not at the prompt, but at everything that has to survive after the answer arrives.</p>
+<p><strong>The method is not “assume the machine can do anything.”</strong> That assumption feels bold; it isn’t — it’s how you get confidently wrong output you never catch, because you stopped checking. What I actually do: assume nothing about the ceiling, push hard to find it, verify what comes back. Ambition and verification aren’t opposites here — they’re the same discipline. Push boldly to discover, trust nothing unverified. Every technique in this book came out of that push-then-test loop, not out of a theory about what AI should be able to do.</p>
+<p>I didn’t arrive at these patterns once, in one place. The same architecture showed up independently across three domains I run this way — personal investing, a serious medical episode, stewardship of a personal collection — each one rediscovering the same four moves: a living document as the source of truth, a second mind checking the first, mistakes converted into standing rules, a bright line where the human decides. <strong>Be precise about what that evidence actually supports:</strong> three domains, one practitioner, is cross-domain reappearance within a single mind — not independent convergence, and not proof the method transfers to you. Treat it as a hypothesis worth testing, not a guarantee.</p>
+<p>This project is a contribution to an open-source commons, and the larger hope is to help start one (see “Where This Goes”). A contribution earns credibility by reconciling to actuals, not by sounding right. I mark what’s durable versus perishable, and I check claims against independent review, because two systems agreeing is not the same thing as a claim being true. I’m asking you to hold your own contributions to the same bar.</p>
+<p><strong>Scope: three platforms, and only three.</strong> The patterns here are written for, and where possible verified on, <strong>ChatGPT, Google Gemini, and Claude</strong> — chosen because between them they cover the full capability set the patterns depend on: persistent project memory, file upload and generation, multimodal input, code execution, connectors to external stores. Everything else — DeepSeek, Perplexity, Meta AI — is out of scope. Not a judgment of quality; an application of this book’s own rule: if a pattern hasn’t been tested and verified on a platform, the book doesn’t claim it works there. An untested platform gets treated as a hypothesis, not a promise — and if you verify one, that’s a real contribution back to the commons.</p>
+<p><strong>One correction to make plainly: platform capabilities are the least durable thing in this book, and free tiers are not paid tiers.</strong> What a platform can’t do this quarter, it may do next quarter — and the reverse. Every capability-dependent pattern carries a dated, tier-specific note (see the Platform Compatibility appendix), and you should re-check it against your platform’s current state before you trust it. There’s a pattern in this book for exactly that check — [SCF-07], Connector Discovery: ask your platform what it can actually do, don’t assume from memory.</p>
+<p>A final constraint, and the one that earns all the rest. This book pushes you to push AI systems hard — but that’s only earned through the rigor of the audit, not a substitute for it. In medicine, law, and money, the line is absolute and non-negotiable: the AI prepares your questions; it does not make your decision. You and your credentialed professional do that. Skip the audit and the boldness is just recklessness wearing a better outfit. Keep it, and it’s a disciplined workflow.</p>
+<p>One more thing I didn’t expect: how it would feel. Building these systems put me back into a state I hadn’t felt in twenty years — the flow of my early days as a software engineer, looking up to find the whole day gone. I wasn’t optimizing prompts; I was architecting a system, and architecture absorbs you in a way a single answer never does. I’m not promising you’ll feel it too — flow is personal, and these tools frustrate as often as they deliver — but it’s the honest reason I kept going, and it’s worth naming: the payoff lives in the building, not in the asking.</p>
+<section id="how-to-self-classify-borrowed-from-skill-rating-systems-like-pickleballs-dupr" class="level3" data-number="3.0.1">
+<h3 data-number="3.0.1" class="anchored" data-anchor-id="how-to-self-classify-borrowed-from-skill-rating-systems-like-pickleballs-dupr"><span class="header-section-number">3.0.1</span> How to Self-Classify (borrowed from skill-rating systems like pickleball’s DUPR)</h3>
+<p>Rating systems like DUPR don’t ask how long you’ve played or how confident you feel — they ask what you can actually do, against opponents who can do the same. Borrow that logic here. Classify yourself by what you’ve <em>done</em>, not by time spent or how expert you feel.</p>
+<p>Proficiency frameworks for AI exist — Anthropic’s AI Fluency work, and several published level ladders. This is not one of them. The tiers here are a reading order for a catalog, not an assessment: they tell you which patterns will make sense next, not how good you are.</p>
+<ol type="1">
+<li><p><strong>Beginner.</strong> You’ve used a chat AI for straightforward questions and drafts — or maybe this is your first real conversation with one at all; either way, you’re in exactly the right place. <em>Self-check:</em> have you ever made the model interview you before it answers, or asked it to argue against your own draft instead of approving it? If you haven’t tried either, start here — the Beginner section is built for exactly this gap.</p></li>
+<li><p><strong>Intermediate.</strong> You use AI daily for real work — documents, day-to-day tasks — but nothing you’ve built with it outlives the conversation that created it. <em>Self-check:</em> if this chat ended right now, would anything of value survive in a file you control? If no, the Intermediate section closes that gap.</p></li>
+<li><p><strong>Advanced.</strong> You’ve built at least one durable, file-based system: a memory registry, a spreadsheet with self-checking guards, a handoff brief a stranger could pick up cold. <em>Self-check:</em> could a brand-new AI thread, with zero chat history, continue your project today from a file alone? If yes, you’re here — the Advanced section is your home base.</p></li>
+<li><p><strong>Elite.</strong> You run governed, multi-thread operations where verification is structurally independent of the work being verified — not just promised, but enforced. <em>Self-check:</em> do you have a standing rule that no model can grade its own output, and has that rule ever actually caught a real error? If yes, the Elite section (gated, and now you know why) is where you already live.</p></li>
+<li><p><strong>Scaffolder.</strong> Not a harder degree of the same skill — a change in what you produce. You’ve noticed a recurring solution to a recurring problem in your own practice, one that isn’t in this book, and written it down so someone else can use it. The Scaffolder section at the end is a short guide to doing exactly that.</p></li>
+</ol>
+<p><strong>One honest note matching the registry’s own tags:</strong> every numbered pattern is assigned to Beginner, Intermediate, Advanced or Elite. The first three are what a single practitioner does or builds alone; the Elite patterns are labeled Elite, not because they’re harder in the same sense, but because they describe <em>governing a system</em>, not building one — the pyramid’s gated top rung. Scaffolder isn’t a pattern label at all; it’s what you become when you stop following this catalog and start adding to it.</p>
+<p>Here’s how to build that infrastructure.</p>
+<hr>
+</section>
+</section>
+<section id="acknowledgements" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> ACKNOWLEDGEMENTS</h1>
+<p>To Hewlen, the rock of my life. Thank you for your patience, understanding and support as I endeavored on this project.</p>
+<p>To Philip and Huey, my long-time friends and reviewers. For your insightful feedback and encouragement, making the book far better than it could have ever been without your input.</p>
+<p>To Claude (Anthropic), my AI co-author. The writing, editing, research, and building in this book happened across hundreds of hours of collaborative sessions. The work is mine; the partnership made it possible.</p>
+<p>To Gemini (Google), ChatGPT (OpenAI), and DeepSeek — the AI co-reviewers whose independent review rounds challenged, tested, and sharpened every pattern in this catalogue.</p>
+<hr>
+<hr>
+<section id="introduction" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="introduction"><span class="header-section-number">4.1</span> INTRODUCTION</h2>
+<p>There is a colleague available to you now who has no fear of your reaction, no stake in your good opinion, and no memory of the argument you had last week. That absence — call it <strong>The Zero-Stakes Critic</strong> — is not a limitation of the tool; it is the whole advantage. A human reviewer calibrates criticism against the relationship it might damage. An AI has no relationship to protect, which means it can be exactly as blunt as the problem requires, every time, without cost. This book leans on that advantage constantly — see [ONR-02] for where it first shows up as a technique, and watch for it again wherever a pattern asks the model to argue against you rather than agree with you.</p>
+<section id="how-this-book-is-organized" class="level3" data-number="4.1.1">
+<h3 data-number="4.1.1" class="anchored" data-anchor-id="how-this-book-is-organized"><span class="header-section-number">4.1.1</span> How This Book Is Organized</h3>
+<p><strong>The book is arranged by skill tier, because that is the order to read it in.</strong> Five tier sections — Beginner, Intermediate, Advanced, Elite, Scaffolder. The first four contain patterns, each resting on the one below; the fifth teaches contribution.</p>
+<p><strong>Read one section, then stop.</strong> Come back when it feels automatic. You do not need to read this book front to back, and you shouldn’t: a beginner who pushes to the end spends most of their time on infrastructure for problems they haven’t hit yet, and the patterns read as ceremony rather than as answers.</p>
+<p><strong>Within a tier, patterns are grouped by category</strong> — the ID prefix: <code>ONR</code> On-Ramps · <code>SCF</code> Foundation · <code>PRAC</code> Practices · <code>ARC</code> Architecture · <code>GOV</code> Governance · <code>SAFE</code> Safety. A category can appear at more than one tier, because some safety rules are the first thing a beginner needs while others are advanced infrastructure. If you want the category view instead of the tier view, the <strong>Patterns at a Glance</strong> appendix lists all fifty that way.</p>
+<p><strong>IDs are permanent and never renumber.</strong> Display order is cosmetic, and a pattern’s number tells you nothing about where it sits or how hard it is. Gaps in the numbering are expected and carry no meaning — a retired or never-written ID is left empty rather than backfilled.</p>
+<p><strong>Scaffolder, the fifth section, has no patterns at all.</strong> It isn’t a harder degree of the same skill — it’s a change in what you produce, from applying this catalog to adding to it. See “How to Self-Classify” in the Preface.</p>
+<p><strong>Try it right now, not just read about it:</strong> you can upload this file directly into a ChatGPT, Gemini, or Claude conversation and ask it to walk you through any pattern, or even test one on a real task with you on the spot. The book is written to be handed to the tool it describes — see “Where This Goes” for the fuller version of this idea.</p>
+<p><strong>Most of this has a lineage.</strong> Very little here is unprecedented in computing — the moves have names in distributed systems, software engineering and security, some of them decades old. Where a pattern has a known ancestor, its entry says so in a <strong>Lineage</strong> line. That isn’t a hedge. Knowing that your memory registry is paging, or that your one-writer rule is leader-based replication, tells you where to look when it breaks and what someone else already learned the hard way. What’s uncommon isn’t the mechanism — it’s who’s doing it by hand, alone, in a chat window.</p>
+<p><strong>And pattern catalogs for AI already exist</strong> — prompt-pattern collections in the academic literature, design-pattern books for people building applications and agents, UX pattern libraries for people designing chat interfaces. All of them are written for builders. This book is for the person on the other side of that interface: no code, no framework, no API key, just a chat window and work that matters. That is a different problem with a different failure set, and it is the gap this book is trying to fill.</p>
+<p><strong>A second marker, ★, means don’t skip this one.</strong> It flags the few patterns that quietly unlock several others. The Swap Disk Protocol ([ARC-01]) is the clearest example: once your project has durable, file-based memory, a dozen Advanced patterns become easy instead of theoretical.</p>
+<hr>
+</section>
+<section id="the-one-principle-underneath-everything" class="level3" data-number="4.1.2">
+<h3 data-number="4.1.2" class="anchored" data-anchor-id="the-one-principle-underneath-everything"><span class="header-section-number">4.1.2</span> The One Principle Underneath Everything</h3>
+<p><strong>Reliability is a property of the system, not the model alone.</strong> A capable-but-fallible model becomes a reliable collaborator <em>for bounded tasks</em> when it is anchored inside durable, human-auditable artifacts — memory in files, errors turned into guards, verification built into the workflow — its outputs are independently checkable, and a human decides. The model’s capability sets the ceiling on what any workflow can achieve; the system determines how close you get to that ceiling, and how safely you fail when you don’t. Process cannot turn an incapable model into a reliable one; it makes a capable one’s work <em>compound</em> across sessions and its errors catchable.</p>
+<p>Running underneath every pattern is one governing rule, which is why it is stated here as a principle rather than filed as a technique:</p>
+<blockquote class="blockquote">
+<p><strong>The verifier must be independent of the verified</strong> — where <em>independent</em> means the check does not share the failure that produced the error. A model cannot reliably check its own work: it shares its own blind spots, and asked whether it succeeded, it will tend to say yes. So every check that matters is run by something <em>outside</em> the thing being checked: a human, a different model, a frozen reference, a mechanical diff against stored actuals. Independence of the <em>evidence</em> matters more than a different brand of model — a mechanical diff against the stored bytes is independent even when the same agent wrote them, though it establishes integrity against that baseline, not that the baseline is <em>correct</em>; where correctness is claimed, reconcile against an independently established, known-good reference. A second model is not independent merely by being a different product; it may share training data and blind spots. Self-review is <em>insufficient as final assurance</em>, not worthless. This is the reason the techniques work, not one of the techniques.</p>
+</blockquote>
+<p><strong>Why a second channel, and not a second look.</strong> The failure this guards against isn’t that a model lies. It’s that a model’s account of what it just did is generated the same way as everything else it generates — from the conversation, not from an inspection of the world. Ask whether a file saved and you get a fluent, plausible answer that was never checked against a file system. The report and the reality are produced by different processes, and only one of them involves looking.</p>
+<p>So a write is not done until a <em>different</em> read confirms it: a different tool, a direct metadata lookup, the folder listing itself. And “a different model” is not automatically independent — two models can share a blind spot. Independence is a property of the evidence channel, not the brand.</p>
+<p><em>(This principle was briefly filed as a numbered pattern, <code>[GOV-05]</code>. It was promoted here because it is the spine, not a step. — DECIDED)</em></p>
+<hr>
+</section>
+<section id="privacy-attribution-rule-governs-all-drafting" class="level3" data-number="4.1.3">
+<h3 data-number="4.1.3" class="anchored" data-anchor-id="privacy-attribution-rule-governs-all-drafting"><span class="header-section-number">4.1.3</span> Privacy &amp; Attribution Rule (governs all drafting)</h3>
+<ul>
+<li><strong>The author is public.</strong> Real name and professional background appear in “About the Author,” which precedes the Preface so the reader knows who is speaking before they begin.</li>
+<li><strong>All use cases are genericized wherever generic terms protect privacy.</strong> The <em>method</em> is shown; identifying specifics are abstracted or mapped to a neutral vertical. The financial work becomes “personal investing and long-term financial planning”; a collection becomes “a personal collection”; and so on. <strong>Wealth signals are scrubbed</strong> — no net-worth figures, no “family office,” “high-stakes governance,” “complex/multi-jurisdictional assets,” “estate,” or “veto threshold” language that would let a reader infer the author is wealthy. Net worth stays private. Genericization also serves the mission — an abstracted case transfers to the reader’s own domain more readily than a specific one.</li>
+<li><strong>The medical thread is abstracted hardest</strong> — “a serious medical condition,” “a hospital admission”; never the diagnosis or specific clinical detail, even where the specifics are known and authentic.</li>
+<li><strong>Third parties stay abstracted until galley-phase consent</strong> — human reviewers, physicians, family. (Named only with their explicit permission, given this is a free, public, forkable book.)</li>
+<li><em>Consciously accepted trade-off:</em> a named author attached to a genericized case is not fully anonymized — a determined reader could link author to example. The rule protects the sensitive <em>specifics</em> (numbers, diagnosis, others’ identities), not the association between the author and the general activity.</li>
+</ul>
+<hr>
+
+
+</section>
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./beginner.html" class="pagination-link" aria-label="BEGINNER">
+        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">BEGINNER</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

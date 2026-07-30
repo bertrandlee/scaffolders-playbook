@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.13">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>6&nbsp; APPENDIX: Patterns at a Glance – The Scaffolder's Playbook</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./elite.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-ac077c1e730dfeb5e42400639d17284e.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-672462fdcb365bbc6454bd413249eca7.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar docked quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./appendices.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">APPENDIX: Patterns at a Glance</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">The Scaffolder’s Playbook</a> 
+        <div class="sidebar-tools-main tools-wide">
+    <a href="https://github.com/bertrandlee/scaffolders-playbook" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+    <div class="dropdown">
+      <a href="" title="Download" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Download"><i class="bi bi-download"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="./The-Scaffolder-s-Playbook.pdf">
+              <i class="bi bi-file-pdf pe-1"></i>
+            Download PDF
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="./The-Scaffolder-s-Playbook.epub">
+              <i class="bi bi-journal pe-1"></i>
+            Download ePub
+            </a>
+          </li>
+      </ul>
+    </div>
+    <div class="dropdown">
+      <a href="" title="Share" id="quarto-navigation-tool-dropdown-1" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Share"><i class="bi bi-share"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-1">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://twitter.com/intent/tweet?url=|url|">
+              <i class="bi bi-twitter pe-1"></i>
+            Twitter
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://www.linkedin.com/sharing/share-offsite/?url=|url|">
+              <i class="bi bi-linkedin pe-1"></i>
+            LinkedIn
+            </a>
+          </li>
+      </ul>
+    </div>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">The Scaffolder’s Playbook</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./beginner.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">BEGINNER</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./intermediate.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">INTERMEDIATE</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./advanced.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">ADVANCED</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./elite.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">ELITE — GATED</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./appendices.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">APPENDIX: Patterns at a Glance</span></span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#onr-on-ramps-beginner" id="toc-onr-on-ramps-beginner" class="nav-link active" data-scroll-target="#onr-on-ramps-beginner"><span class="header-section-number">6.1</span> ONR — On-Ramps (Beginner)</a></li>
+  <li><a href="#prac-practices-intermediateadvanced" id="toc-prac-practices-intermediateadvanced" class="nav-link" data-scroll-target="#prac-practices-intermediateadvanced"><span class="header-section-number">6.2</span> PRAC — Practices (Intermediate–Advanced)</a></li>
+  <li><a href="#arc-architecture-intermediateadvanced" id="toc-arc-architecture-intermediateadvanced" class="nav-link" data-scroll-target="#arc-architecture-intermediateadvanced"><span class="header-section-number">6.3</span> ARC — Architecture (Intermediate–Advanced)</a></li>
+  <li><a href="#scf-foundation-lifecycle-mostly-intermediate" id="toc-scf-foundation-lifecycle-mostly-intermediate" class="nav-link" data-scroll-target="#scf-foundation-lifecycle-mostly-intermediate"><span class="header-section-number">6.4</span> SCF — Foundation &amp; Lifecycle (mostly Intermediate)</a></li>
+  <li><a href="#gov-governance-elite-gated" id="toc-gov-governance-elite-gated" class="nav-link" data-scroll-target="#gov-governance-elite-gated"><span class="header-section-number">6.5</span> GOV — Governance (Elite, Gated)</a></li>
+  <li><a href="#safe-safety-cross-tier-non-negotiable" id="toc-safe-safety-cross-tier-non-negotiable" class="nav-link" data-scroll-target="#safe-safety-cross-tier-non-negotiable"><span class="header-section-number">6.6</span> SAFE — Safety (cross-tier, non-negotiable)</a></li>
+  <li><a href="#appendix-platform-compatibility" id="toc-appendix-platform-compatibility" class="nav-link" data-scroll-target="#appendix-platform-compatibility"><span class="header-section-number">7</span> APPENDIX: Platform Compatibility</a></li>
+  <li><a href="#appendix-standing-rules-of-engagement" id="toc-appendix-standing-rules-of-engagement" class="nav-link" data-scroll-target="#appendix-standing-rules-of-engagement"><span class="header-section-number">8</span> APPENDIX: Standing Rules of Engagement</a></li>
+  <li><a href="#appendix-further-reading" id="toc-appendix-further-reading" class="nav-link" data-scroll-target="#appendix-further-reading"><span class="header-section-number">9</span> APPENDIX: Further Reading</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">APPENDIX: Patterns at a Glance</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p><em>A distilled, one-line-per-pattern index of all fifty patterns in this book, grouped by family. For the full write-up of any pattern — the motivating scenario, Apply, Benefit, Guardrail, Related — read the full entry in its tier section; this is the index, not the text.</em></p>
+<blockquote class="blockquote">
+<p><strong>Selection is a judgment call.</strong> This is a recognition aid, not an auto-apply library — match the pattern to the actual problem in front of you; don’t reach for one just because it’s here. Read it the way you’d consult a table of contents, not the way a script executes a lookup. When unsure, read the full pattern in its section before applying it.</p>
+</blockquote>
+<section id="onr-on-ramps-beginner" class="level2" data-number="6.1">
+<h2 data-number="6.1" class="anchored" data-anchor-id="onr-on-ramps-beginner"><span class="header-section-number">6.1</span> ONR — On-Ramps (Beginner)</h2>
+<ul>
+<li><strong>[ONR-01] The Interview Primitive</strong> — reach for this when you’re about to ask for something important and haven’t given the model enough of your actual situation to work with.</li>
+<li><strong>[ONR-02] The Adversarial Framing Shift</strong> — reach for this when you want your draft critiqued, not approved, and suspect a direct “does this look okay?” will just get flattery back.</li>
+<li><strong>[ONR-03] The Blind-Spot Inquiry</strong> — reach for this before a high-stakes meeting or process, to surface the question you didn’t know to ask.</li>
+<li><strong>[ONR-04] Direct Grounding: Don’t Explain — Show</strong> — reach for this whenever you’re about to describe a document from memory instead of just showing it the original.</li>
+<li><strong>[ONR-05] Multi-Modal Equity: Talk to the Tool</strong> — reach for this when typing itself, not the technology, is the real barrier for someone.</li>
+</ul>
+</section>
+<section id="prac-practices-intermediateadvanced" class="level2" data-number="6.2">
+<h2 data-number="6.2" class="anchored" data-anchor-id="prac-practices-intermediateadvanced"><span class="header-section-number">6.2</span> PRAC — Practices (Intermediate–Advanced)</h2>
+<ul>
+<li><strong>[PRAC-01] Both of You Can Be Wrong</strong> — reach for this to set the working relationship up right from day one: both you and the model can be wrong, so both of you check.</li>
+<li><strong>[PRAC-02] Active Interrogation &amp; Steering</strong> — reach for this the moment an answer feels off mid-conversation, instead of waiting to catch it later.</li>
+<li><strong>[PRAC-03] Canonical-File Discipline</strong> — reach for this whenever more than one copy of a working file could plausibly exist.</li>
+<li><strong>[PRAC-04] Structured Elicitation Before Action</strong> — reach for this before a real, consequential piece of work begins, not just a casual first question.</li>
+<li><strong>[PRAC-05] Explicit Source-Grounding</strong> — reach for this whenever a number or fact matters and shouldn’t be recalled from memory alone.</li>
+<li><strong>[PRAC-06] The Decoupled Reference Audit</strong> — reach for this after any structural change, to check the result against a copy nobody touched.</li>
+<li><strong>[PRAC-07] Pin Down Its Role So It Stops Drifting</strong> — reach for this when you need a role to stay stable across sessions instead of quietly drifting.</li>
+<li><strong>[PRAC-08] The Disconfirmation Gate</strong> — reach for this before committing to a real decision, to make the model argue it’s wrong first.</li>
+<li><strong>[PRAC-09] The Unrun Check</strong> — reach for this when citing a figure whose verification route was closed — to distinguish a computed result from an inherited number that was never checked.</li>
+<li><strong>[PRAC-10] The Negative Must Be Earned</strong> — reach for this when a model reports that nothing is there, before treating absence as a clean result.</li>
+<li><strong>[PRAC-11] Reader vs.&nbsp;Machine: Choosing the Output Format</strong> — reach for this whenever output is headed to another tool or thread, not just a human reader.</li>
+</ul>
+</section>
+<section id="arc-architecture-intermediateadvanced" class="level2" data-number="6.3">
+<h2 data-number="6.3" class="anchored" data-anchor-id="arc-architecture-intermediateadvanced"><span class="header-section-number">6.3</span> ARC — Architecture (Intermediate–Advanced)</h2>
+<ul>
+<li><strong>[ARC-01] The Swap Disk Protocol: Give the AI a Permanent Notebook</strong> ★ — reach for this the moment a project needs to survive past one conversation.</li>
+<li><strong>[ARC-02] Self-Installing Guards</strong> — reach for this to stop the same class of mistake from recurring, instead of just fixing today’s instance.</li>
+<li><strong>[ARC-03] Have a Different AI Attack the First One’s Work</strong> — reach for this when a draft needs a genuinely different set of blind spots looking at it.</li>
+<li><strong>[ARC-04] The Single-Writer Reconciliation Pattern</strong> — reach for this when more than one thread (or person) might edit the same working file.</li>
+<li><strong>[ARC-05] Archived Versions + Embedded Changelog</strong> — reach for this so a bad edit is always recoverable, not just the current state.</li>
+<li><strong>[ARC-06] Structured Handoff Briefs</strong> — reach for this when a fresh thread or a human reviewer needs to get productive fast, without re-deriving context from a raw transcript.</li>
+<li><strong>[ARC-07] Recheck the Record Against the Original</strong> — reach for this periodically, to catch a wrong-but-plausible value that internal checks alone would never see.</li>
+<li><strong>[ARC-08] A Copy You Edit Isn’t a Backup</strong> — reach for this when deciding whether a duplicate file is a backup or a liability.</li>
+<li><strong>[ARC-09] Resolve Standing Instructions by Rule, Not by Name</strong> — reach for this instead of hard-coding a specific filename into a standing instruction.</li>
+</ul>
+</section>
+<section id="scf-foundation-lifecycle-mostly-intermediate" class="level2" data-number="6.4">
+<h2 data-number="6.4" class="anchored" data-anchor-id="scf-foundation-lifecycle-mostly-intermediate"><span class="header-section-number">6.4</span> SCF — Foundation &amp; Lifecycle (mostly Intermediate)</h2>
+<ul>
+<li><strong>[SCF-01] One Thread Per Topic, Like a Standing Specialist</strong> — reach for this to keep one thread per domain, rather than letting contexts bleed together.</li>
+<li><strong>[SCF-02] Match the Model to the Job, Not Habit</strong> — reach for this instead of defaulting to the same model out of habit for every task.</li>
+<li><strong>[SCF-03] Don’t Trust What It Says About Itself</strong> — reach for this instead of trusting a model’s own claim about how full its context window is.</li>
+<li><strong>[SCF-04] Communication Style Adjustment</strong> — reach for this to get the register you actually need, instead of the model’s default helpful-generalist tone.</li>
+<li><strong>[SCF-05] Asymmetric Resource Substitution</strong> — reach for this before spending a scarce image-upload slot on content that could just be pasted as text.</li>
+<li><strong>[SCF-06] Flat-File Text Injection</strong> — reach for this instead of pasting a large document straight into the chat box.</li>
+<li><strong>[SCF-07] Workflow-Anchored Connector Discovery</strong> — reach for this before manually doing something a native integration might already do for you.</li>
+<li><strong>[SCF-08] Park a Task So You Don’t Lose Your Train of Thought</strong> — reach for this to park a mid-conversation task without losing your current train of thought.</li>
+<li><strong>[SCF-09] Debugging a Spreadsheet Like Production Code</strong> — reach for this when a spreadsheet error needs root-cause treatment, not a one-cell patch.</li>
+<li><strong>[SCF-10] Encryption Is Not the Answer</strong> — reach for this when the instinct to “encrypt everything” is aimed at the wrong actual threat.</li>
+<li><strong>[SCF-11] Email Is the Master Key</strong> — reach for this before connecting an AI assistant to email, the one account whose compromise cascades into everything else.</li>
+<li><strong>[SCF-12] Prune the Ceremony Your AI Can’t See</strong> — reach for this when a standing instruction is firing more often than it needs to, and only you can see it.</li>
+<li><strong>[SCF-13] Treat “I Can’t” as a Claim to Test</strong> — reach for this whenever a model claims it can’t do something it did easily before.</li>
+<li><strong>[SCF-14] Test the Whole Channel, Not Just the Step</strong> — reach for this when every step reported success but the end result is wrong — to check whether the pipeline itself delivered.</li>
+</ul>
+</section>
+<section id="gov-governance-elite-gated" class="level2" data-number="6.5">
+<h2 data-number="6.5" class="anchored" data-anchor-id="gov-governance-elite-gated"><span class="header-section-number">6.5</span> GOV — Governance (Elite, Gated)</h2>
+<ul>
+<li><strong>[GOV-01] The Self-Correcting Feedback Loop</strong> — reach for this to turn a caught mistake into a standing rule, not just a one-time fix.</li>
+<li><strong>[GOV-02] The Structural Unit Test</strong> — reach for this to check structural integrity against a reference nobody involved in the change could have touched.</li>
+<li><strong>[GOV-03] See What Else Moves When You Move One Thing</strong> — reach for this when changing one variable could ripple into domains you weren’t thinking about.</li>
+<li><strong>[GOV-04] Screen Instructions by Where They Came From</strong> — reach for this whenever an instruction arrives inside content rather than being typed by you directly.</li>
+<li><strong>[GOV-06] Name the Ceiling, Not the Comfort</strong> — reach for this when describing what a safeguard does — say what it can’t guarantee in the same breath.</li>
+<li><strong>[GOV-07] Only One Channel Publishes — Make Forgery Loud</strong> — reach for this when multiple threads share a space and you need a way to tell a real standing rule from a fake one.</li>
+<li><strong>[GOV-08] Graceful Session Close</strong> — reach for this to make the state record the final action of a session, not merely something written before the session ends.</li>
+</ul>
+</section>
+<section id="safe-safety-cross-tier-non-negotiable" class="level2" data-number="6.6">
+<h2 data-number="6.6" class="anchored" data-anchor-id="safe-safety-cross-tier-non-negotiable"><span class="header-section-number">6.6</span> SAFE — Safety (cross-tier, non-negotiable)</h2>
+<ul>
+<li><strong>[SAFE-01] The Data Ingestion Boundary</strong> — reach for this before typing or uploading anything — decide what never goes in, in the first place.</li>
+<li><strong>[SAFE-02] The Decoupling Charter (The Bright Line)</strong> — reach for this in medicine, law, or money: the AI preps the questions, a credentialed professional makes the call.</li>
+<li><strong>[SAFE-03] Temporal Drift Verification</strong> — reach for this for anything current — give the model today’s date rather than trusting its memory.</li>
+<li><strong>[SAFE-04] Time-Grounding: The Clock It Doesn’t Have</strong> — reach for this whenever a time-sensitive answer arrives without a dated source behind it.</li>
+</ul>
+<hr>
+</section>
+<section id="appendix-platform-compatibility" class="level1" data-number="7">
+<h1 data-number="7"><span class="header-section-number">7</span> APPENDIX: Platform Compatibility</h1>
+<p><em>The cells below are hypotheses from published capability docs (<code>[doc]</code>) or hands-on tests (<code>[verify: DD/MM/YY, tier]</code>). Platform capability is the book’s most perishable content — re-check with [SCF-07] before relying on any cell. AS OF: 29 Jul 2026 SST.</em></p>
+<p><strong>How to read this:</strong> Most patterns are <strong>platform-agnostic</strong> — pure prompting/process disciplines that work on any capable chat model. They carry no compatibility flag. Only the <strong>feature-dependent</strong> patterns below need one. Baseline = <strong>free</strong> tier; <strong>paid</strong> shows what the paid consumer tier unlocks.</p>
+<p><strong>A note on DeepSeek:</strong> included here as a reader reference, not a tested scope platform. This book’s verified three-platform set remains ChatGPT, Gemini, and Claude (see Preface). DeepSeek cells are documented claims only; none are hands-on verified.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Pattern</th>
+<th>Needs</th>
+<th>ChatGPT (free / Plus)</th>
+<th>Gemini (free / AI Plus+)</th>
+<th>Claude (free / paid)</th>
+<th>DeepSeek (free)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>[ONR-04] Direct Grounding</td>
+<td>file/image upload</td>
+<td><code>[doc]</code> Free: 3 files/24h · Plus: 80/3h rolling, 20/message</td>
+<td><code>[doc]</code> Free: 10 files/session (no code files) · AI Plus+: Drive attach, code files</td>
+<td><code>[doc]</code> consistent across tiers (message limits vary, not file count) / Projects: persistent</td>
+<td><code>[doc]</code> app: yes — session-based text extraction; not retained between chats</td>
+</tr>
+<tr class="even">
+<td>[ONR-05] Multi-Modal Equity</td>
+<td>voice + image input</td>
+<td><code>[doc]</code> Free: limited voice · Plus: full voice + vision</td>
+<td><code>[doc]</code> Free: Gemini Live (mobile only) + image · AI Plus+: full</td>
+<td><code>[doc]</code> app: voice (iOS/Android) / yes</td>
+<td><code>[doc]</code> No voice in official app; image input not supported in consumer chat</td>
+</tr>
+<tr class="odd">
+<td>[ARC-01] Swap Disk</td>
+<td>file re-hydration; persistent project</td>
+<td><code>[doc]</code> Free: Projects (5 files/project, since Sep 2025) · Plus: Projects (25 files/project)</td>
+<td><code>[doc]</code> Free: Gemini Notebook (50 sources/notebook, syncs in-app) + Gems for persona · AI Plus: 100 sources/notebook</td>
+<td><code>[doc]</code> manual upload / Projects (paid): persistent workspace</td>
+<td><code>[doc]</code> No Projects or notebook equivalent; each session starts fresh</td>
+</tr>
+<tr class="even">
+<td>[ARC-03] Cross-Model Review</td>
+<td>access to 2nd model lineage</td>
+<td><code>[doc]</code> use any 2 platforms (even 2 free tiers)</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr class="odd">
+<td>[ARC-04] Single-Writer Reconciliation</td>
+<td>store write/copy</td>
+<td><code>[doc]</code> read-only connector (paid); no write</td>
+<td><code>[doc]</code> Gemini Notebook + Drive: read/write with human-review step (AI Plus+, Workspace)</td>
+<td><code>[verify: 02/07/26, this env]</code> create/write(text)+copy verified; no move/delete; binary human-placed</td>
+<td><code>[doc]</code> no file store connector; no write capability</td>
+</tr>
+<tr class="even">
+<td>[ARC-05] Archived Versions</td>
+<td>file store + archive</td>
+<td><code>[doc]</code> manual versioning; no AI copy</td>
+<td><code>[doc]</code> manual + AI can create in Gemini Notebook</td>
+<td><code>[doc]</code> manual + AI <code>copy</code></td>
+<td><code>[doc]</code> manual only; no AI copy; session-based</td>
+</tr>
+<tr class="odd">
+<td>[ARC-07] Reconcile-to-Source</td>
+<td>read linked sources</td>
+<td><code>[doc]</code> manual re-upload (free) / read connector (paid)</td>
+<td><code>[doc]</code> upload / Gemini Notebook maintains source links</td>
+<td><code>[doc]</code> manual / read connector</td>
+<td><code>[doc]</code> manual re-upload only; session-based</td>
+</tr>
+<tr class="even">
+<td>[SCF-01] Advisor Model</td>
+<td>persistent threads/persona</td>
+<td><code>[doc]</code> Free: Projects (basic, 5 files) · Plus: full Projects</td>
+<td><code>[doc]</code> Free: Gems (persona, all tiers) + Gemini Notebook (source workspace) · AI Plus: more notebook sources</td>
+<td><code>[doc]</code> manual threads / Projects (paid)</td>
+<td><code>[doc]</code> no persistent threads; no Projects/Gems equivalent</td>
+</tr>
+<tr class="odd">
+<td>[SCF-02] Model Routing</td>
+<td>tier/model choice</td>
+<td><code>[doc]</code> Free: GPT-5 (~10 msg/5h then mini) · Plus: GPT-5.5 + model picker</td>
+<td><code>[doc]</code> Free: Gemini 3.6 Flash + 30 Pro prompts/day · AI Plus: 128K ctx · AI Pro: 1M ctx</td>
+<td><code>[doc]</code> — / model choice (Sonnet, Opus etc.)</td>
+<td><code>[doc]</code> DeepSeek V4 + V4-Flash available; no consumer model picker</td>
+</tr>
+<tr class="even">
+<td>[SCF-05] Resource Substitution</td>
+<td>(manages upload quotas)</td>
+<td><code>[doc]</code> Free: tight (3 files/24h) · Plus: 80/3h rolling</td>
+<td><code>[doc]</code> Free: generous (10/session); no code files free</td>
+<td><code>[doc]</code> paid-leaning (message limits vary, file count consistent)</td>
+<td><code>[doc]</code> session-based; quota not displayed</td>
+</tr>
+<tr class="odd">
+<td>[SCF-06] Flat-File Injection</td>
+<td>file attach</td>
+<td><code>[doc]</code> Free: 3/24h · Plus: 80/3h, 20/message</td>
+<td><code>[doc]</code> Free: 10/session · AI Plus+: Drive attach</td>
+<td><code>[doc]</code> paid (limited free)</td>
+<td><code>[doc]</code> app: yes (session-only, text extraction)</td>
+</tr>
+<tr class="even">
+<td>[SCF-07] Connector Discovery</td>
+<td>connectors</td>
+<td><code>[doc]</code> paid only — Agent mode: GitHub, Google services</td>
+<td><code>[doc]</code> Free: Google Search · AI Plus+: Gmail sidebar · AI Pro+: full Workspace</td>
+<td><code>[doc]</code> paid only</td>
+<td><code>[doc]</code> no connectors in consumer app</td>
+</tr>
+</tbody>
+</table>
+<p><strong>The cross-platform finding worth stating in prose (mid-2026):</strong> none of the four platforms grants an AI unrestricted autonomous write/move/delete on your file store as a standard consumer feature — Claude reads/copies and (in this project’s configuration) writes raw text at a path; ChatGPT’s connector is read-only; Gemini creates/edits and <em>proposes</em> moves behind a human-review dashboard; DeepSeek has no file store connector at all. This is <em>why</em> [ARC-04]’s split-responsibility model (AI writes content, human controls placement) is the correct pattern everywhere, not a workaround for one platform.</p>
+<p><strong>Gemini nomenclature note (updated 29 Jul 2026):</strong> two distinct tools that are often confused. <strong>Gems</strong> = reusable custom AI personas with full Gemini capabilities (analogous to ChatGPT’s custom GPTs); available on all tiers including free. <strong>Gemini Notebook</strong> (renamed from NotebookLM on 16 Jul 2026) = source-grounded research workspace where the AI answers only from uploaded sources; now integrated in the Gemini app sidebar; available free (50 sources/notebook) with higher limits on paid tiers. The two can be combined. Gemini tier names as of mid-2026: Free · AI Plus ($4.99/mo) · AI Pro ($19.99/mo) · AI Ultra ($99.99+/mo); compute-based usage limits since I/O 2026.</p>
+<p><strong>Two caveats that outlast any version number.</strong> Many readers work in Microsoft environments (OneDrive/SharePoint) rather than Google Drive — the Swap Disk Protocol’s mechanics are cloud-agnostic, but connector tooling differs by provider and should be re-verified per platform. And the exact click-sequence to grant or re-grant a write scope is interface-specific, and has been observed to change between releases: treat the <em>need</em> to re-verify write access per thread as durable, the <em>steps</em> as perishable.</p>
+<p><strong>Verification note:</strong> every <code>[doc]</code> cell is a documented hypothesis, not a hands-on test. The single <code>[verify]</code> cell is from this project’s own production environment — Claude, Jul 2026. Two AI models agreeing on a cell is not verification. This appendix is itself an instance of [PRAC-05]: a documented estimate, flagged as such, awaiting reconciliation to actuals.</p>
+<hr>
+</section>
+<section id="appendix-standing-rules-of-engagement" class="level1" data-number="8">
+<h1 data-number="8"><span class="header-section-number">8</span> APPENDIX: Standing Rules of Engagement</h1>
+<p><em>Working rules for producing this book across multiple AI threads — and directly reusable by any reader running their own multi-model workflow. Every rule here was earned by a specific failure during this book’s own production.</em></p>
+<ol type="1">
+<li><strong>No self-attestation.</strong> Never claim your own output is “verified,” “audited,” “locked,” or “consensus.” State what you changed; leave confirmation to an independent pass. An audit entry is written <em>after</em> the reviewer returns, never pre-filled.</li>
+<li><strong>Reference by stable ID, never display number.</strong> IDs are frozen; display order is cosmetic; never renumber a reference.</li>
+<li><strong>After any structural change, list the affected pointers as unverified</strong> for the reviewer — don’t assert they’re fine.</li>
+<li><strong>The verifier must be external to the verified.</strong> Any check must sit outside the thing checked; no model grading its own work.</li>
+<li><strong>Perishable content is principle-first and timestamped (SST).</strong> Lead with the durable principle; mark specifics (models, prices, limits) as “as of [date], illustrative.”</li>
+<li><strong>One canonical file; the frozen version wins ties.</strong> When a pattern exists in two places and they differ, flag it — don’t silently reconcile. Never compress or drop cleared content when porting; if compressing for display, say so.</li>
+<li><strong>Flat engineering register.</strong> No hype adjectives, in the manuscript or the surrounding notes.</li>
+<li><strong>Standard submission format:</strong> what changed · affected pointers (unverified) · the draft · <code>[PENDING]</code> audit line.</li>
+<li><strong>Bright line on high-stakes content</strong> stated in-section: AI prepares questions and surfaces what to check; human and professional decide.</li>
+<li><strong>Beginner bar on Beginner-tier content:</strong> followable by a non-technical reader; no jargon.</li>
+</ol>
+<p><em>(Note: the disciplines in these rules also appear as reader-facing patterns — [PRAC-06] Decoupled Reference Audit, [PRAC-03] Canonical-File Discipline, [SCF-03] Self-Reporting Trap, [SAFE-03] Temporal Drift Verification and [SAFE-04] Time-Grounding. The rules are the operational version; the patterns are the taught version.)</em></p>
+<hr>
+<p><em>The project’s internal work queue, backlog, status notes, and full production changelog are maintained in the separate private editorial file — not in this public manuscript.</em></p>
+<hr>
+</section>
+<section id="appendix-further-reading" class="level1" data-number="9">
+<h1 data-number="9"><span class="header-section-number">9</span> APPENDIX: Further Reading</h1>
+<p><em>This book covers one layer. These cover the ones around it. Listed because a reader who wants the whole picture should have it — not as prerequisites. You can start here and read outward.</em></p>
+<p><strong>The layer below: prompting.</strong> DAIR.AI, <em>Prompt Engineering Guide</em> — promptingguide.ai. Free, open-source, community-maintained, kept current. The definitive practical treatment of the turn: zero-shot and few-shot, chain-of-thought, self-consistency, and the rest. If a pattern in this book assumes you can get a decent answer out of a single question, this is where that skill is taught.</p>
+<p>White, J. et al., <em>A Prompt Pattern Catalog to Enhance Prompt Engineering with ChatGPT</em> — arXiv:2302.11382 (Vanderbilt, 2023). Sixteen prompt patterns documented in the software-pattern form this book also borrows. Written for software development tasks, so the examples are developer-facing, but the pattern discipline transfers.</p>
+<p><strong>The layer sideways: building things on top of models.</strong> Lakshmanan, V. and Hapke, H., <em>Generative AI Design Patterns</em> (O’Reilly). Thirty-two patterns for people shipping applications and agents — hallucination, non-determinism, guardrails, retrieval. Assumes you write code.</p>
+<p>Gullí, A., <em>Agentic Design Patterns</em> (Springer). Patterns for building autonomous agents, worked through agent frameworks. Also assumes you write code.</p>
+<p><strong>Why these are not competitors to this book.</strong> Every one of them is written for someone building <em>with</em> a model — engineers, application developers, agent authors. This book is written for someone working <em>alongside</em> one in a chat window. The prompting resources sit underneath it: they make each turn better. This book is about everything that has to survive after the turn ends. Read them together and you have both floors of the same building.</p>
+<p><strong>A caution, in this book’s own spirit.</strong> Links rot and editions change. Titles and authors are durable; the URL above was checked on 29 July 2026 and may not be by the time you read this.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./elite.html" class="pagination-link" aria-label="ELITE — GATED">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">ELITE — GATED</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

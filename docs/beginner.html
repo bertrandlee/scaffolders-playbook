@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.13">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>2&nbsp; BEGINNER – The Scaffolder's Playbook</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./intermediate.html" rel="next">
+<link href="./index.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-ac077c1e730dfeb5e42400639d17284e.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-672462fdcb365bbc6454bd413249eca7.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar docked quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./beginner.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">BEGINNER</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">The Scaffolder’s Playbook</a> 
+        <div class="sidebar-tools-main tools-wide">
+    <a href="https://github.com/bertrandlee/scaffolders-playbook" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+    <div class="dropdown">
+      <a href="" title="Download" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Download"><i class="bi bi-download"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="./The-Scaffolder-s-Playbook.pdf">
+              <i class="bi bi-file-pdf pe-1"></i>
+            Download PDF
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="./The-Scaffolder-s-Playbook.epub">
+              <i class="bi bi-journal pe-1"></i>
+            Download ePub
+            </a>
+          </li>
+      </ul>
+    </div>
+    <div class="dropdown">
+      <a href="" title="Share" id="quarto-navigation-tool-dropdown-1" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Share"><i class="bi bi-share"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-1">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://twitter.com/intent/tweet?url=|url|">
+              <i class="bi bi-twitter pe-1"></i>
+            Twitter
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://www.linkedin.com/sharing/share-offsite/?url=|url|">
+              <i class="bi bi-linkedin pe-1"></i>
+            LinkedIn
+            </a>
+          </li>
+      </ul>
+    </div>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">The Scaffolder’s Playbook</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./beginner.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">BEGINNER</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./intermediate.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">INTERMEDIATE</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./advanced.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">ADVANCED</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./elite.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">ELITE — GATED</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./appendices.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">APPENDIX: Patterns at a Glance</span></span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#the-interview-primitive" id="toc-the-interview-primitive" class="nav-link active" data-scroll-target="#the-interview-primitive"><span class="header-section-number">2.0.1</span> The Interview Primitive</a></li>
+  <li><a href="#the-adversarial-framing-shift" id="toc-the-adversarial-framing-shift" class="nav-link" data-scroll-target="#the-adversarial-framing-shift"><span class="header-section-number">2.0.2</span> The Adversarial Framing Shift</a></li>
+  <li><a href="#the-blind-spot-inquiry" id="toc-the-blind-spot-inquiry" class="nav-link" data-scroll-target="#the-blind-spot-inquiry"><span class="header-section-number">2.0.3</span> The Blind-Spot Inquiry</a></li>
+  <li><a href="#direct-grounding-dont-explain-show" id="toc-direct-grounding-dont-explain-show" class="nav-link" data-scroll-target="#direct-grounding-dont-explain-show"><span class="header-section-number">2.0.4</span> Direct Grounding: Don’t Explain — Show</a></li>
+  <li><a href="#multi-modal-equity-talk-to-the-tool" id="toc-multi-modal-equity-talk-to-the-tool" class="nav-link" data-scroll-target="#multi-modal-equity-talk-to-the-tool"><span class="header-section-number">2.0.5</span> Multi-Modal Equity: Talk to the Tool</a></li>
+  <li><a href="#encryption-is-not-the-answer" id="toc-encryption-is-not-the-answer" class="nav-link" data-scroll-target="#encryption-is-not-the-answer"><span class="header-section-number">2.0.6</span> Encryption Is Not the Answer</a></li>
+  <li><a href="#email-is-the-master-key" id="toc-email-is-the-master-key" class="nav-link" data-scroll-target="#email-is-the-master-key"><span class="header-section-number">2.0.7</span> Email Is the Master Key</a></li>
+  <li><a href="#the-data-ingestion-boundary" id="toc-the-data-ingestion-boundary" class="nav-link" data-scroll-target="#the-data-ingestion-boundary"><span class="header-section-number">2.0.8</span> The Data Ingestion Boundary</a></li>
+  <li><a href="#temporal-drift-verification" id="toc-temporal-drift-verification" class="nav-link" data-scroll-target="#temporal-drift-verification"><span class="header-section-number">2.0.9</span> Temporal Drift Verification</a></li>
+  <li><a href="#time-grounding-the-clock-it-doesnt-have" id="toc-time-grounding-the-clock-it-doesnt-have" class="nav-link" data-scroll-target="#time-grounding-the-clock-it-doesnt-have"><span class="header-section-number">2.0.10</span> Time-Grounding: The Clock It Doesn’t Have</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">BEGINNER</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p><em>Ten patterns, readable in one sitting. Every one can be used within a single conversation, with no persistent project infrastructure — though a few use ordinary upload, image or voice features.</em></p>
+<p><strong>Read this section and stop.</strong> When these feel automatic — when you make the model interview you before it answers without having to remember to — come back for Intermediate. There is no benefit to reading further before then, and some cost: the later sections describe infrastructure that only makes sense once you have hit the problems it solves.</p>
+<section id="the-interview-primitive" class="level3" data-number="2.0.1">
+<h3 data-number="2.0.1" class="anchored" data-anchor-id="the-interview-primitive"><span class="header-section-number">2.0.1</span> The Interview Primitive</h3>
+<p><em>Try asking it to interview you first.</em> <em>(cross-reference: <code>[ONR-01]</code> · <strong>Beginner</strong>)</em></p>
+<p>Ask “plan a family trip to Japan” and you get a generic, tourist-trap itinerary built on surface assumptions. Before you let the model answer anything real, make it interview <em>you</em> first.</p>
+<ul>
+<li><strong>Analogy:</strong> A good tailor measures you before cutting the cloth; a bad one hands you something off the rack and calls it fitted.</li>
+<li><strong>Benefit:</strong> Surfaces the gaps in your own thinking — a budget you forgot to mention, a mobility limit, a dietary need — before you’ve committed to a plan built on a wrong guess. Costs one extra reply; saves redoing the whole thing.</li>
+<li><strong>Apply:</strong> End your first prompt with <em>“Before you answer, ask me the top three clarifying questions you need to tailor this to my situation.”</em></li>
+<li><strong>Guardrail:</strong> The model organizes your options; you know your life. You keep authority over the decision.</li>
+<li><strong>Related:</strong> → Structured Elicitation Before Action</li>
+</ul>
+</section>
+<section id="the-adversarial-framing-shift" class="level3" data-number="2.0.2">
+<h3 data-number="2.0.2" class="anchored" data-anchor-id="the-adversarial-framing-shift"><span class="header-section-number">2.0.2</span> The Adversarial Framing Shift</h3>
+<p><em>Ask it to tear your draft apart, not approve it.</em> <em>(cross-reference: <code>[ONR-02]</code> · <strong>Beginner</strong>)</em></p>
+<p>Drafting a hard email — pushing back on an unreasonable deadline — the instinct is to paste it and ask “does this sound okay?” Because these tools are trained to be helpful and polite, they’ll tell you it does. In a high-stakes moment, an assistant that always agrees is a liability.</p>
+<ul>
+<li><strong>Analogy:</strong> Ask a friend “does this look okay?” and you get “yes.” Ask “what would my harshest critic say?” and you get it while you can still fix it.</li>
+<li><strong>Benefit:</strong> Trades one uncomfortable moment (reading a critique of your own draft) for catching a tone problem or a misread before it reaches the person who’ll actually judge you on it.</li>
+<li><strong>Apply:</strong> <em>“Critique this aggressively. Don’t tell me why it works — tell me what’s wrong, what I’ve missed, and how it could backfire.”</em></li>
+<li><strong>Guardrail:</strong> It spots tone and logic gaps; it doesn’t know your workplace politics or your manager’s temperament. It’s a peer reviewer, not the decider.</li>
+<li><strong>Related:</strong> → Active Interrogation &amp; Steering</li>
+</ul>
+</section>
+<section id="the-blind-spot-inquiry" class="level3" data-number="2.0.3">
+<h3 data-number="2.0.3" class="anchored" data-anchor-id="the-blind-spot-inquiry"><span class="header-section-number">2.0.3</span> The Blind-Spot Inquiry</h3>
+<p><em>Ask what you forgot to ask.</em> <em>(cross-reference: <code>[ONR-03]</code> · <strong>Beginner</strong>)</em></p>
+<p>Applying for a permit, prepping for a specialist appointment — the real danger isn’t the question you asked badly, it’s the one you never thought to ask at all. An AI answers exactly what you type; it won’t volunteer the gap in your plan unless you make it hunt for one.</p>
+<ul>
+<li><strong>Analogy:</strong> A good doctor answers the question you asked, then the one you didn’t know to ask.</li>
+<li><strong>Benefit:</strong> Turns everything the model has seen before — thousands of similar situations — into a checklist built for your blind spots specifically, not just the ones you knew to ask about.</li>
+<li><strong>Apply:</strong> <em>“Thinking about everything we’ve discussed, what important questions or hidden risks should I raise with my specialist that I haven’t thought of?”</em></li>
+<li><strong>Guardrail:</strong> The boundary that matters most in daily use: this prepares you for your professional, it does not replace them. Describe your situation in general terms; keep identifying numbers out.</li>
+<li><strong>Related:</strong> → Active Interrogation &amp; Steering</li>
+</ul>
+</section>
+<section id="direct-grounding-dont-explain-show" class="level3" data-number="2.0.4">
+<h3 data-number="2.0.4" class="anchored" data-anchor-id="direct-grounding-dont-explain-show"><span class="header-section-number">2.0.4</span> Direct Grounding: Don’t Explain — Show</h3>
+<p><em>Show it the document instead of describing it.</em> <em>(cross-reference: <code>[ONR-04]</code> · <strong>Beginner</strong>)</em></p>
+<p>“I have a bank statement with a $50 late fee, but I don’t know why” hands the model a memory of a document instead of the document — and memory misreads dates, skips fine print, drops the one line that mattered. Stop summarizing what you think you saw. Show it the original.</p>
+<ul>
+<li><strong>Analogy:</strong> Describing a rash over the phone versus showing the doctor — one is your memory of the thing, the other is the thing.</li>
+<li><strong>Benefit:</strong> Removes an entire category of error at the source — the model reasons from the real document instead of your recollection of it, so its answer can’t be wrong for a reason you introduced.</li>
+<li><strong>Apply:</strong> Photograph or upload the actual page. <em>“Read this directly and tell me why I was charged this fee; highlight the exact rule on the page.”</em></li>
+<li><strong>Guardrail:</strong> Redact account numbers, NRIC, address before uploading. The AI explains; you decide what to do — and if it matters, read the part it points to yourself to confirm.</li>
+<li><strong>Related:</strong> → Explicit Source-Grounding</li>
+</ul>
+</section>
+<section id="multi-modal-equity-talk-to-the-tool" class="level3" data-number="2.0.5">
+<h3 data-number="2.0.5" class="anchored" data-anchor-id="multi-modal-equity-talk-to-the-tool"><span class="header-section-number">2.0.5</span> Multi-Modal Equity: Talk to the Tool</h3>
+<p><em>Speak to it when typing is the barrier.</em> <em>(cross-reference: <code>[ONR-05]</code> · <strong>Beginner</strong>)</em></p>
+<p>For someone who isn’t comfortable typing, or whose first language isn’t the interface’s, the keyboard itself is the barrier — not the technology behind it. Someone in a hospital, working through a health plan written in an unfamiliar language, can simply speak instead: describe the situation, ask the question, hear the answer back.</p>
+<ul>
+<li><strong>Analogy:</strong> An office that only takes written forms turns away anyone who finds writing hard. One with a counter you can talk to serves everybody.</li>
+<li><strong>Benefit:</strong> Opens the tool to exactly the people who need it most and are least served by a keyboard-first design — non-typists, non-native speakers, anyone for whom syntax was never the point.</li>
+<li><strong>Apply:</strong> Use the voice feature in your own language: <em>“I’ll speak to you in [language]; explain these terms to me simply.”</em></li>
+<li><strong>Guardrail:</strong> Speaking to the AI is the same as typing to it — your words are still sent and stored. Don’t say more than you need to, and not where others can overhear. A preparation tool, not a clinician.</li>
+<li><strong>Related:</strong> <em>(none yet — its natural parent, deliberate modality/language routing, isn’t its own pattern; flagged as a possible future entry)</em></li>
+</ul>
+</section>
+<section id="encryption-is-not-the-answer" class="level3" data-number="2.0.6">
+<h3 data-number="2.0.6" class="anchored" data-anchor-id="encryption-is-not-the-answer"><span class="header-section-number">2.0.6</span> Encryption Is Not the Answer</h3>
+<p><em>Protect the account, not the file.</em> <em>(cross-reference: <code>[SCF-10]</code> · <strong>Beginner</strong>)</em></p>
+<p>Worried about AI and privacy, the instinct is to reach for encryption. But you can’t use data you can’t decrypt — and encryption does nothing against the actual threat: someone who steals your login. To them, you’re already unlocked.</p>
+<ul>
+<li><strong>Analogy:</strong> A wall safe does nothing if the burglar walks in wearing your face and knows the combination.</li>
+<li><strong>Benefit:</strong> Redirects real effort from a comforting non-solution to the two things that actually reduce risk — account security and data minimization.</li>
+<li><strong>Apply:</strong> Protect the account, not the file. Strong, unique passwords; two-factor or passkeys; and above all, hand over less data in the first place.</li>
+<li><strong>Guardrail:</strong> This isn’t “encryption is useless” in general; it’s “encryption is the wrong answer to <em>this</em> fear.” A stolen, authenticated session walks straight past it.</li>
+</ul>
+</section>
+<section id="email-is-the-master-key" class="level3" data-number="2.0.7">
+<h3 data-number="2.0.7" class="anchored" data-anchor-id="email-is-the-master-key"><span class="header-section-number">2.0.7</span> Email Is the Master Key</h3>
+<p><em>Your inbox opens every other lock you own.</em> <em>(cross-reference: <code>[SCF-11]</code> · <strong>Beginner</strong>)</em></p>
+<p>You connect an AI assistant to your calendar without a second thought — then, without thinking much harder, do the same for your inbox. That second connection is categorically different: email is the password-reset channel for <em>every other account you own</em>, so an assistant with email access effectively holds the keys to everything else too.</p>
+<ul>
+<li><strong>Analogy:</strong> Lending your house key is one thing. Lending the cabinet where every other key hangs is another.</li>
+<li><strong>Benefit:</strong> Protects the one account whose compromise cascades into all the others, by treating it as categorically different from the rest.</li>
+<li><strong>Apply:</strong> Think of connector access as a sensitivity gradient: Calendar &lt; Cloud Storage &lt; Email. Grant the least that does the job.</li>
+<li><strong>Guardrail:</strong> Deliberately <em>not</em> connecting your email is a feature, not a limitation. The convenience you give up is small; the blast radius you close off is your whole digital life.</li>
+</ul>
+</section>
+<section id="the-data-ingestion-boundary" class="level3" data-number="2.0.8">
+<h3 data-number="2.0.8" class="anchored" data-anchor-id="the-data-ingestion-boundary"><span class="header-section-number">2.0.8</span> The Data Ingestion Boundary</h3>
+<p><em>Decide what never gets typed or uploaded in the first place.</em> <em>(cross-reference: <code>[SAFE-01]</code> · <strong>Beginner</strong>)</em></p>
+<p>The excitement of “just upload the document” or “just speak to it” has to arrive paired with an instinct for what <em>not</em> to hand over in the first place. You control what goes into the box.</p>
+<ul>
+<li><strong>Analogy:</strong> You don’t hand over the whole wallet to prove you’re over eighteen — you show one card.</li>
+<li><strong>Benefit:</strong> Prevents a leak at its only fully preventable point — before it’s ever typed or uploaded — rather than trying to contain it afterward.</li>
+<li><strong>Apply:</strong> Redact identifying detail — passwords, full NRIC, account numbers, other people’s private data — before pasting or uploading. Share only the part needed for the question.</li>
+<li><strong>Guardrail:</strong> This is a Beginner rule precisely because Direct Grounding and Multi-Modal Equity send beginners toward uploading documents and speaking aloud — the boundary has to arrive with the capability.</li>
+</ul>
+</section>
+<section id="temporal-drift-verification" class="level3" data-number="2.0.9">
+<h3 data-number="2.0.9" class="anchored" data-anchor-id="temporal-drift-verification"><span class="header-section-number">2.0.9</span> Temporal Drift Verification</h3>
+<p><em>Give it today’s date instead of trusting its memory.</em> <em>(cross-reference: <code>[SAFE-03]</code> · <strong>Beginner</strong>)</em></p>
+<p>A model’s training cutoff means it will answer a “what’s current” question with total confidence and total staleness, and give no visible sign of which one it’s doing.</p>
+<ul>
+<li><strong>Analogy:</strong> Asking someone just back from a year off-grid what the weather’s like. Confident answer; last year’s weather.</li>
+<li><strong>Benefit:</strong> Catches an entire class of confidently-wrong answers before they’re acted on, for the cost of one extra instruction.</li>
+<li><strong>Apply:</strong> For anything current, supply today’s date and tell the model to search rather than answer from memory. <em>“Today is [date]. Don’t answer this from memory — search, and tell me the date on whatever source you use.”</em></li>
+<li><strong>Guardrail:</strong> A Beginner rule because one-shot users often don’t know a cutoff exists.</li>
+</ul>
+</section>
+<section id="time-grounding-the-clock-it-doesnt-have" class="level3" data-number="2.0.10">
+<h3 data-number="2.0.10" class="anchored" data-anchor-id="time-grounding-the-clock-it-doesnt-have"><span class="header-section-number">2.0.10</span> Time-Grounding: The Clock It Doesn’t Have</h3>
+<p><em>Never let it guess what day it is.</em> <em>(cross-reference: <code>[SAFE-04]</code> · <strong>Beginner</strong> — new in this edition)</em></p>
+<p>This is Temporal Drift Verification’s sibling, and the distinction matters: that pattern is about <em>stale knowledge</em> (the model doesn’t know what changed since training). This one is about the <em>clock itself</em>. A base model has no clock of its own; the product wrapped around it may or may not supply one — a device time zone, a system-injected date, a live search tool. Which of those you have is not visible from inside the conversation, and web searches often return cached pages rather than fresh ones. When the model can’t establish the date, it doesn’t stop. It fabricates a plausible one.</p>
+<ul>
+<li><strong>Analogy:</strong> A stopped clock still has hands. It still points somewhere. It looks exactly like a working one until you check it against something else.</li>
+<li><strong>Benefit:</strong> Kills an entire class of confident, invisible staleness — the wrong date that looks exactly like a right one.</li>
+<li><strong>Apply:</strong> For anything time-sensitive, never accept a bare answer. Give it today’s date yourself, or make it show you the dated source it’s reading. Verify the date, the time zone and the freshness channel rather than assuming any one of them exists or is correct. If it can’t produce one, treat the time as unknown. <em>“Before you answer: what is today’s date, and how do you know it? If you can’t establish it from a dated source, say so instead of estimating.”</em></li>
+<li><strong>Guardrail:</strong> The dangerous case isn’t the obvious error. It’s the <em>roughly-correct</em> fabrication, because occasional accuracy builds false trust. One good guess earns three unearned ones.</li>
+<li><strong>Related:</strong> → Temporal Drift Verification (its sibling)</li>
+</ul>
+<hr>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./index.html" class="pagination-link" aria-label="The Scaffolder's Playbook">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">The Scaffolder’s Playbook</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./intermediate.html" class="pagination-link" aria-label="INTERMEDIATE">
+        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">INTERMEDIATE</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
