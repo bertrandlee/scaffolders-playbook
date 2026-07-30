@@ -1,0 +1,90 @@
+{
+  "_README": "Declared expectations for The Scaffolder's Playbook build. THIS FILE IS THE REFERENCE; the tests assert the built artifacts against it. Owner-reviewable. When a value here changes deliberately, change it here FIRST, then rebuild. A test failure means either the build broke or this file is stale - decide which, never silently edit to match.",
+  "_version": "3",
+  "_as_of": "Thu 30 Jul 2026 SST",
+  "_naming": "Resolve this file by SELECT_LATEST on build_expectations_YYYYMMDD_vN.json within the Process folder - NEVER by a remembered fileId, which goes stale on every revision. The two undated build_expectations.json files in Process are superseded and should be archived.",
+  "manuscript": {
+    "pattern_count": 50,
+    "family_counts": {
+      "ONR": 5,
+      "PRAC": 11,
+      "ARC": 9,
+      "SCF": 14,
+      "GOV": 7,
+      "SAFE": 4
+    },
+    "shard_control_total_bytes": 131658,
+    "shard_count": 6
+  },
+  "docx": {
+    "heading3_pagebreak_before": true,
+    "heading3_keepnext": true,
+    "centered_opener_sections": 20,
+    "consolas_quote_replacements": 34,
+    "content_types_duplicates": 0,
+    "xml_wellformed": true,
+    "cover_extent_cx": 5486400,
+    "cover_extent_cy": 8229600
+  },
+  "pdf": {
+    "page_count_min": 130,
+    "page_count_max": 150,
+    "toc_unresolved_entries": 0,
+    "back_cover_count_word": "Fifty"
+  },
+  "epub": {
+    "content_files_min": 85,
+    "cover_present": true
+  },
+  "text_layer_forbidden": [
+    "Forty-six",
+    "forty-six",
+    "thirty-odd",
+    "controlled test",
+    "misreported",
+    "Three-platform self-report",
+    "Updated findings",
+    "globally unique",
+    "Gmail Is the Master",
+    "Calendar < Drive <",
+    "TOC_FIELD_PLACEHOLDER"
+  ],
+  "_note_text_layer_required": "Text-layer only. Strings that exist ONLY inside baked images (e.g. 'Fifty tested patterns' on the back cover) must NOT go here - they are unfindable by text extraction. Those belong to the OCR check (pdf.back_cover_count_word, test P06).",
+  "text_layer_required": [
+    "Email Is the Master Key",
+    "The Unrun Check",
+    "The Negative Must Be Earned",
+    "Graceful Session Close",
+    "Test the Whole Channel",
+    "APPENDIX: Further Reading",
+    "promptingguide.ai",
+    "For a diagnostic: nobody reaches for one",
+    "a reading order for a catalog, not an assessment"
+  ],
+  "pattern_headings_sample": [
+    "The Interview Primitive",
+    "Canonical-File Discipline",
+    "The Disconfirmation Gate",
+    "Encryption Is Not the Answer",
+    "Flat-File Text Injection",
+    "Archived Versions + Embedded Changelog",
+    "A Copy You Edit Isn't a Backup",
+    "The Unrun Check",
+    "Graceful Session Close",
+    "The Structural Unit Test"
+  ],
+  "_note_legal": "Legal front matter is asserted separately because it is the class of content that went missing undetected: 3,565 B of copyright, licence grant and disclaimers lived only in the disposable assembled file, while the shard control total reconciled perfectly throughout because that content was never in its scope. RULES: (1) every probe must exist verbatim in the canonical frontmatter shard - never type these from memory, two of three hand-written probes were wrong on 30 Jul; (2) the test asserts they survived into the BUILT PDF, because the artifact readers receive is what matters; (3) comparison is hyphen-insensitive - the PDF exporter renders 'non-commercial' as 'noncommercial'.",
+  "legal_required_in_pdf": [
+    "Copyright ©",
+    "BrightRaven Pte Ltd",
+    "Creative Commons Attribution",
+    "irrevocable and applies to all readers",
+    "Internal use within organisations is expressly permitted",
+    "intentionally forkable",
+    "Disclaimer",
+    "not affiliated with",
+    "constitutes professional medical",
+    "without warranties of any kind",
+    "disclaim all liability"
+  ]
+}
