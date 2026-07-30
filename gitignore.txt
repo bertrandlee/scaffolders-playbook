@@ -1,0 +1,20 @@
+# Build outputs — attached to Releases, never committed.
+# Committing them bloats the repo permanently and gives forkers a PDF they
+# cannot edit instead of source they can.
+*.docx
+*.pdf
+*.epub
+!reference/*.docx
+
+# Build working directories
+base_*.docx
+bv*/
+tw*/
+final_v*.md
+*.pkl
+toc_v*.json
+
+# Rendered intermediates
+*.pyc
+__pycache__/
+.DS_Store
