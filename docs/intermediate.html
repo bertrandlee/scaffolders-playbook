@@ -42,7 +42,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-ac077c1e730dfeb5e42400639d17284e.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-672462fdcb365bbc6454bd413249eca7.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-50350f0ef67c465fd9d66d9ebf741958.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -74,7 +74,7 @@ ul.task-list li input[type="checkbox"] {
 
 </head>
 
-<body class="nav-sidebar docked quarto-light">
+<body class="nav-sidebar floating quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -95,11 +95,11 @@ ul.task-list li input[type="checkbox"] {
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="./">The Scaffolder’s Playbook</a> 
-        <div class="sidebar-tools-main tools-wide">
+        <div class="sidebar-tools-main">
     <a href="https://github.com/bertrandlee/scaffolders-playbook" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
     <div class="dropdown">
       <a href="" title="Download" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Download"><i class="bi bi-download"></i></a>
@@ -114,23 +114,6 @@ ul.task-list li input[type="checkbox"] {
             <a class="dropdown-item sidebar-tools-main-item" href="./The-Scaffolder-s-Playbook.epub">
               <i class="bi bi-journal pe-1"></i>
             Download ePub
-            </a>
-          </li>
-      </ul>
-    </div>
-    <div class="dropdown">
-      <a href="" title="Share" id="quarto-navigation-tool-dropdown-1" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Share"><i class="bi bi-share"></i></a>
-      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-1">
-          <li>
-            <a class="dropdown-item sidebar-tools-main-item" href="https://twitter.com/intent/tweet?url=|url|">
-              <i class="bi bi-twitter pe-1"></i>
-            Twitter
-            </a>
-          </li>
-          <li>
-            <a class="dropdown-item sidebar-tools-main-item" href="https://www.linkedin.com/sharing/share-offsite/?url=|url|">
-              <i class="bi bi-linkedin pe-1"></i>
-            LinkedIn
             </a>
           </li>
       </ul>
@@ -222,7 +205,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#structured-handoff-briefs" id="toc-structured-handoff-briefs" class="nav-link" data-scroll-target="#structured-handoff-briefs"><span class="header-section-number">3.3.1</span> Structured Handoff Briefs</a></li>
   </ul></li>
   </ul>
-</nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/bertrandlee/scaffolders-playbook/blob/main/intermediate.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -247,6 +230,11 @@ ul.task-list li input[type="checkbox"] {
 
 
 <p><em>Twenty-one patterns for work that has to outlive the conversation that created it.</em></p>
+<blockquote class="blockquote">
+<p><strong>Read this if</strong> you use AI daily for real work but nothing you build with it outlives the conversation that created it. The test: if this chat ended right now, would anything of value survive in a file you control? If the answer is no, this section closes that gap.</p>
+<p><strong>Skip it if</strong> your work already lands in files you own and can hand to someone else. A refresher costs little; the patterns here are the ones most often half-adopted.</p>
+</blockquote>
+<p><strong>★ means: read this one even if you skip the rest of the section.</strong> In this tier the most load-bearing pattern is the Swap Disk Protocol ([ARC-01]) — it gives your work durable memory outside any conversation, and a dozen later patterns assume you have it.</p>
 <p>Assumes the Beginner section. If you skipped ahead, skim it first — it is ten patterns and it will not take long. Grouped below by category: <strong>Foundation</strong> is workflow and lifecycle hygiene, <strong>Practices</strong> is established discipline applied with unusual rigour, and <strong>Architecture</strong> begins where a single conversation stops being enough.</p>
 <section id="foundation" class="level2" data-number="3.1">
 <h2 data-number="3.1" class="anchored" data-anchor-id="foundation"><span class="header-section-number">3.1</span> Foundation</h2>
@@ -308,7 +296,7 @@ ul.task-list li input[type="checkbox"] {
 <li><strong>Benefit:</strong> Keeps each thread’s context pure and its persona stable, instead of slowly blending into a generalist that’s mediocre at everything.</li>
 <li><strong>Apply:</strong> One durable thread per domain, treated like a standing advisor; don’t conflate.</li>
 <li><strong>Guardrail:</strong> Segmentation minimizes token bloat and drift; it doesn’t substitute for the memory registry that lets a fresh thread inherit context.</li>
-<li><strong>Related:</strong> → Intentional Model Routing</li>
+<li><strong>Related:</strong> → Match the Model to the Job</li>
 </ul>
 </section>
 <section id="match-the-model-to-the-job-not-habit" class="level3" data-number="3.1.6">
@@ -356,7 +344,7 @@ ul.task-list li input[type="checkbox"] {
 <li><strong>Benefit:</strong> Stretches a thread’s useful life further before hitting a hard cap, by not spending a scarce quota on content that had a cheaper channel.</li>
 <li><strong>Apply:</strong> If content can be read as text, paste the text rather than uploading an image of it; ration scarce image slots for genuinely un-extractable visuals.</li>
 <li><strong>Guardrail:</strong> Extends a thread’s useful life <em>further</em>, not indefinitely — text still accumulates tokens toward the same limit.</li>
-<li><strong>Perishability (as of 2026, illustrative):</strong> the specific caps and their asymmetry are interface-specific and change; state the principle, not the numbers.</li>
+<li><strong>Perishability (as of 2026, illustrative):</strong> the specific caps and their asymmetry are interface-specific and change.</li>
 </ul>
 </section>
 <section id="flat-file-text-injection" class="level3" data-number="3.1.10">
@@ -367,7 +355,7 @@ ul.task-list li input[type="checkbox"] {
 <li><strong>Analogy:</strong> Nobody reads a fifty-page contract down the phone. You send it over.</li>
 <li><strong>Benefit:</strong> Avoids the silent formatting corruption or hard rejection a giant inline paste risks, for the cost of one extra click.</li>
 <li><strong>Apply:</strong> For bulky text payloads, attach as a file rather than pasting inline.</li>
-<li><strong>Guardrail:</strong> Perishable — interface-specific behavior; state as an as-of-2026 technique.</li>
+<li><strong>Guardrail:</strong> Perishable — interface-specific behavior, as at 2026.</li>
 <li><strong>Related:</strong> → Reader vs.&nbsp;Machine: Choosing the Output Format</li>
 </ul>
 </section>
@@ -381,12 +369,12 @@ ul.task-list li input[type="checkbox"] {
 <li><strong>Apply:</strong> <em>“I’m working on [workflow]. What connectors, integrations, or tools do you have that could do this more efficiently?”</em></li>
 <li><strong>Guardrail:</strong> Discovering a live data connector doesn’t retire source-grounding — a live feed is still a source to reconcile, not a trusted endpoint to automate without oversight.</li>
 <li><strong>Perishability (as of 2026):</strong> the specific capabilities are date-sensitive; the durable move is the probe.</li>
-<li><strong>Related:</strong> → Intentional Model Routing</li>
+<li><strong>Related:</strong> → Match the Model to the Job</li>
 </ul>
 </section>
 <section id="park-a-task-so-you-dont-lose-your-train-of-thought" class="level3" data-number="3.1.12">
 <h3 data-number="3.1.12" class="anchored" data-anchor-id="park-a-task-so-you-dont-lose-your-train-of-thought"><span class="header-section-number">3.1.12</span> Park a Task So You Don’t Lose Your Train of Thought</h3>
-<p><em>Park a task in a list instead of losing your train of thought.</em> <em>(cross-reference: <code>[SCF-08]</code> · <strong>Intermediate</strong> — not a novel idea; the mid-flow capture ritual is the teaching point)</em></p>
+<p><em>Park a task in a list instead of losing your train of thought.</em> <em>(cross-reference: <code>[SCF-08]</code> · <strong>Intermediate</strong>)</em></p>
 <p>A task surfaces mid-conversation and you have two bad options: derail to handle it now, or hold it in your head and probably lose it. The work queue is the third option — capture it into the persistent artifact and keep going.</p>
 <ul>
 <li><strong>Analogy:</strong> A note on the fridge, not a promise to yourself that you’ll remember. The fridge is still there tomorrow.</li>
@@ -458,7 +446,7 @@ ul.task-list li input[type="checkbox"] {
 <li><strong>Benefit:</strong> Keeps assumptions honestly labeled instead of laundered into facts, so nobody downstream mistakes a guess for something verified.</li>
 <li><strong>Apply:</strong> Feed real documents. When a number can’t be grounded, label it an estimate. <em>“Answer only from the attached documents. If a figure isn’t in them, say ‘not grounded’ rather than estimating.”</em></li>
 <li><strong>Guardrail (approximate-data rail):</strong> Where data genuinely can’t be grounded to exact actuals — inferred from a screenshot, read off a plotted curve — state it as an estimate <em>with a confidence band.</em> The rule isn’t “only use exact data”; it’s “never let slick formatting invite more trust than the data justifies.”</li>
-<li><strong>Related:</strong> <em>(lineage)</em> ← Direct Grounding · → Reconcile-to-Primary-Source (the maintenance-time, whole-system form of this practice)</li>
+<li><strong>Related:</strong> <em>(lineage)</em> ← Direct Grounding · → Recheck the Record Against the Original (the maintenance-time, whole-system form of this practice)</li>
 <li><strong>Lineage:</strong> retrieval-augmented generation and evidence provenance. Lewis et al.&nbsp;(arXiv 2005.11401, 2020) named the move: pair the model with a non-parametric memory it can cite, rather than trusting what it recalls.</li>
 </ul>
 </section>
@@ -504,7 +492,7 @@ ul.task-list li input[type="checkbox"] {
 <h2 data-number="3.3" class="anchored" data-anchor-id="architecture"><span class="header-section-number">3.3</span> Architecture</h2>
 <section id="structured-handoff-briefs" class="level3" data-number="3.3.1">
 <h3 data-number="3.3.1" class="anchored" data-anchor-id="structured-handoff-briefs"><span class="header-section-number">3.3.1</span> Structured Handoff Briefs</h3>
-<p><em>Write a short brief so the next thread doesn’t start from zero.</em> <em>(cross-reference: <code>[ARC-06]</code> · <strong>Intermediate</strong> — a reminder that skill tier and category are independent axes)</em></p>
+<p><em>Write a short brief so the next thread doesn’t start from zero.</em> <em>(cross-reference: <code>[ARC-06]</code> · <strong>Intermediate</strong>)</em></p>
 <p>A fresh thread — or a human reviewer — opens a raw transcript dump and spends its first several exchanges re-deriving what actually matters from the noise. A purpose-built brief, scoped to exactly what <em>they</em> need, gets them working immediately instead.</p>
 <ul>
 <li><strong>Analogy:</strong> The nurse handing over at shift change doesn’t replay the whole day — just what the next shift must act on.</li>
@@ -607,11 +595,6 @@ ul.task-list li input[type="checkbox"] {
           if (link.dataset.originalHref !== undefined) {
             link.href = link.dataset.originalHref;
           }
-            // target, if specified
-            link.setAttribute("target", "_blank");
-            if (link.getAttribute("rel") === null) {
-              link.setAttribute("rel", "noopener");
-            }
         }
       }
     function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
@@ -942,4 +925,4 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-</body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/bertrandlee/scaffolders-playbook/blob/main/intermediate.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li></ul></div></div></div></footer></body></html>

@@ -43,7 +43,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-ac077c1e730dfeb5e42400639d17284e.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-672462fdcb365bbc6454bd413249eca7.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-50350f0ef67c465fd9d66d9ebf741958.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -75,7 +75,7 @@ ul.task-list li input[type="checkbox"] {
 
 </head>
 
-<body class="nav-sidebar docked quarto-light">
+<body class="nav-sidebar floating quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -96,11 +96,11 @@ ul.task-list li input[type="checkbox"] {
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="./">The Scaffolder’s Playbook</a> 
-        <div class="sidebar-tools-main tools-wide">
+        <div class="sidebar-tools-main">
     <a href="https://github.com/bertrandlee/scaffolders-playbook" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
     <div class="dropdown">
       <a href="" title="Download" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Download"><i class="bi bi-download"></i></a>
@@ -115,23 +115,6 @@ ul.task-list li input[type="checkbox"] {
             <a class="dropdown-item sidebar-tools-main-item" href="./The-Scaffolder-s-Playbook.epub">
               <i class="bi bi-journal pe-1"></i>
             Download ePub
-            </a>
-          </li>
-      </ul>
-    </div>
-    <div class="dropdown">
-      <a href="" title="Share" id="quarto-navigation-tool-dropdown-1" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Share"><i class="bi bi-share"></i></a>
-      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-1">
-          <li>
-            <a class="dropdown-item sidebar-tools-main-item" href="https://twitter.com/intent/tweet?url=|url|">
-              <i class="bi bi-twitter pe-1"></i>
-            Twitter
-            </a>
-          </li>
-          <li>
-            <a class="dropdown-item sidebar-tools-main-item" href="https://www.linkedin.com/sharing/share-offsite/?url=|url|">
-              <i class="bi bi-linkedin pe-1"></i>
-            LinkedIn
             </a>
           </li>
       </ul>
@@ -195,11 +178,13 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#the-scaffolders-playbook" id="toc-the-scaffolders-playbook" class="nav-link active" data-scroll-target="#the-scaffolders-playbook"><span class="header-section-number">1</span> The Scaffolder’s Playbook</a>
   <ul class="collapse">
   <li><a href="#beyond-prompt-engineering-to-workflow-architecture" id="toc-beyond-prompt-engineering-to-workflow-architecture" class="nav-link" data-scroll-target="#beyond-prompt-engineering-to-workflow-architecture"><span class="header-section-number">1.1</span> Beyond Prompt Engineering to Workflow Architecture</a></li>
+  <li><a href="#table-of-contents" id="toc-table-of-contents" class="nav-link" data-scroll-target="#table-of-contents"><span class="header-section-number">1.2</span> TABLE OF CONTENTS</a></li>
   </ul></li>
   <li><a href="#about-the-author" id="toc-about-the-author" class="nav-link" data-scroll-target="#about-the-author"><span class="header-section-number">2</span> ABOUT THE AUTHOR</a></li>
   <li><a href="#preface-why-i-wrote-this-book" id="toc-preface-why-i-wrote-this-book" class="nav-link" data-scroll-target="#preface-why-i-wrote-this-book"><span class="header-section-number">3</span> PREFACE: Why I Wrote This Book</a>
   <ul class="collapse">
   <li><a href="#how-to-self-classify-borrowed-from-skill-rating-systems-like-pickleballs-dupr" id="toc-how-to-self-classify-borrowed-from-skill-rating-systems-like-pickleballs-dupr" class="nav-link" data-scroll-target="#how-to-self-classify-borrowed-from-skill-rating-systems-like-pickleballs-dupr"><span class="header-section-number">3.0.1</span> How to Self-Classify (borrowed from skill-rating systems like pickleball’s DUPR)</a></li>
+  <li><a href="#and-then-theres-a-different-axis-entirely" id="toc-and-then-theres-a-different-axis-entirely" class="nav-link" data-scroll-target="#and-then-theres-a-different-axis-entirely"><span class="header-section-number">3.0.2</span> And then there’s a different axis entirely</a></li>
   </ul></li>
   <li><a href="#acknowledgements" id="toc-acknowledgements" class="nav-link" data-scroll-target="#acknowledgements"><span class="header-section-number">4</span> ACKNOWLEDGEMENTS</a>
   <ul class="collapse">
@@ -207,11 +192,10 @@ ul.task-list li input[type="checkbox"] {
   <ul class="collapse">
   <li><a href="#how-this-book-is-organized" id="toc-how-this-book-is-organized" class="nav-link" data-scroll-target="#how-this-book-is-organized"><span class="header-section-number">4.1.1</span> How This Book Is Organized</a></li>
   <li><a href="#the-one-principle-underneath-everything" id="toc-the-one-principle-underneath-everything" class="nav-link" data-scroll-target="#the-one-principle-underneath-everything"><span class="header-section-number">4.1.2</span> The One Principle Underneath Everything</a></li>
-  <li><a href="#privacy-attribution-rule-governs-all-drafting" id="toc-privacy-attribution-rule-governs-all-drafting" class="nav-link" data-scroll-target="#privacy-attribution-rule-governs-all-drafting"><span class="header-section-number">4.1.3</span> Privacy &amp; Attribution Rule (governs all drafting)</a></li>
   </ul></li>
   </ul></li>
   </ul>
-</nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/bertrandlee/scaffolders-playbook/blob/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -219,7 +203,6 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">The Scaffolder’s Playbook</h1>
-<p class="subtitle lead">Beyond Prompt Engineering to Workflow Architecture</p>
 </div>
 
 
@@ -255,12 +238,10 @@ ul.task-list li input[type="checkbox"] {
 <p><strong>Bertrand Lee</strong></p>
 <p><em>First Edition</em></p>
 <hr>
-<p><em>Draft revised 27 July 2026 (SST) — if you have an earlier copy, this one supersedes it.</em></p>
-<hr>
-<p><em>Copyright © 2026 BrightRaven Pte Ltd, Singapore</em></p>
-<p><em>Published by BrightRaven Pte Ltd (trading as BrightRaven.ai)</em></p>
-<p><em>ISBN [pending — NLB application in progress] (e-book)</em></p>
+<p><em>Copyright © 2026 Bertrand Lee, Singapore</em></p>
+<p><em>Published by Bertrand Lee, Singapore</em></p>
 <p><em>First published 2026</em></p>
+<p><em>This is a printed snapshot of a living work, taken 31 July 2026. The current version — with corrections, added patterns and updated platform notes — is at playbook.brightraven.ai</em></p>
 <hr>
 <p><em>This work is licensed under the Creative Commons Attribution–NonCommercial 4.0 International License (CC BY-NC 4.0). You are free to share and adapt this material for non-commercial purposes, provided you give appropriate credit, link to the license, and indicate if changes were made. Commercial use is not permitted without the author’s written consent.</em></p>
 <p><em>Full license: creativecommons.org/licenses/by-nc/4.0</em></p>
@@ -278,12 +259,62 @@ ul.task-list li input[type="checkbox"] {
 <p><em>To the maximum extent permitted by applicable law, the author and publisher disclaim all liability for any loss, damage, or claim arising directly or indirectly from reliance on this book or on AI outputs generated using techniques described herein.</em></p>
 <hr>
 </section>
+<section id="table-of-contents" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="table-of-contents"><span class="header-section-number">1.2</span> TABLE OF CONTENTS</h2>
+<ul>
+<li>The Scaffolder’s Playbook — <strong>1</strong>
+<ul>
+<li>Beyond Prompt Engineering to Workflow Architecture — <strong>1</strong></li>
+</ul></li>
+<li>ABOUT THE AUTHOR — <strong>7</strong></li>
+<li>PREFACE: Why I Wrote This Book — <strong>9</strong></li>
+<li>ACKNOWLEDGEMENTS — <strong>17</strong>
+<ul>
+<li>INTRODUCTION — <strong>18</strong></li>
+</ul></li>
+<li>BEGINNER — <strong>24</strong></li>
+<li>INTERMEDIATE — <strong>36</strong>
+<ul>
+<li>Foundation — <strong>36</strong></li>
+<li>Practices — <strong>51</strong></li>
+<li>Architecture — <strong>61</strong></li>
+</ul></li>
+<li>ADVANCED — <strong>63</strong>
+<ul>
+<li>Practices — <strong>63</strong></li>
+<li>Architecture — <strong>67</strong></li>
+<li>Safety — <strong>81</strong></li>
+</ul></li>
+<li>ELITE — GATED — <strong>83</strong></li>
+<li>PATTERN FINDER — <strong>93</strong>
+<ul>
+<li>You are already doing the hard part — <strong>93</strong></li>
+<li>How to write one up — <strong>94</strong></li>
+<li>Four checks before you call it a pattern — <strong>95</strong></li>
+<li>Where this goes — <strong>96</strong></li>
+</ul></li>
+<li>APPENDIX: Patterns at a Glance — <strong>99</strong>
+<ul>
+<li>ONR — On-Ramps (Beginner) — <strong>99</strong></li>
+<li>PRAC — Practices (Intermediate–Advanced) — <strong>100</strong></li>
+<li>ARC — Architecture (Intermediate–Advanced) — <strong>101</strong></li>
+<li>SCF — Foundation &amp; Lifecycle (mostly Intermediate) — <strong>102</strong></li>
+<li>GOV — Governance (Elite, Gated) — <strong>103</strong></li>
+<li>SAFE — Safety (cross-tier, non-negotiable) — <strong>104</strong></li>
+</ul></li>
+<li>APPENDIX: Platform Compatibility — <strong>105</strong></li>
+<li>APPENDIX: Standing Rules of Engagement — <strong>109</strong></li>
+<li>APPENDIX: Further Reading — <strong>111</strong></li>
+</ul>
+<hr>
+</section>
 </section>
 <section id="about-the-author" class="level1" data-number="2">
 <h1 data-number="2"><span class="header-section-number">2</span> ABOUT THE AUTHOR</h1>
-<p>Bertrand Lee started at Creative Technology, writing its first open-source Linux audio driver for the Sound Blaster Live! family and working with kernel developers to get it upstreamed. At Microsoft he was principal author of the draft USB Video Class specification — including the Extension Unit mechanism that let vendors add their own controls without breaking the generic driver — co-founded the USB Video Device Working Group with partners including Logitech, stayed through specification 1.0 in September 2003, and built Windows’ UVC driver. Twenty-three years later it is still a reason a webcam works when you plug it in: Windows, macOS and Linux provide built-in class support for compliant UVC devices, and Android supports external UVC cameras on conforming devices. It turns up well beyond webcams — conferencing systems, dashcams, drones, medical endoscopes, the tracking cameras inside VR headsets.</p>
+<p>Bertrand Lee holds a B.S. in Electrical and Computer Engineering (College and University Honors) from Carnegie Mellon University, USA.</p>
+<p>He started at Creative Technology, writing its first open-source Linux audio driver for the Sound Blaster Live! family and working with kernel developers to get it upstreamed. At Microsoft he was principal author of the USB Video Class specification — including the Extension Unit mechanism that let vendors add their own controls without breaking the generic driver — co-founded the USB Video Device Working Group with partners including Logitech, stayed through specification 1.0 in September 2003, and built Windows’ UVC driver. Twenty-three years later it is still a reason a webcam works when you plug it in: Windows, macOS and Linux provide built-in class support for compliant UVC devices, and Android supports external UVC cameras on conforming devices. It turns up well beyond webcams — conferencing systems, dashcams, drones, medical endoscopes, the tracking cameras inside VR headsets.</p>
 <p>His path into natural-language processing began at VoiceBox, building in-car voice assistants years before phones made them familiar — statistical NLP and grammar-driven parsing on embedded automotive hardware, before deep learning changed the field. He later led video-platform engineering at Panopto, in Seattle and Hong Kong.</p>
-<p>In 2018, two decades into his career, he went back to school for the methods that had displaced the ones he knew: four months full-time at a machine learning bootcamp. As a Smart Nation Fellow at GovTech he then helped lead the team that built VICA, the Singapore government’s conversational-AI platform, which replaced the earlier Ask Jamie chatbots. He chose its NLP engine by benchmarking eight commercial platforms against a common test set rather than by reputation. Engine-agnosticism was a requirement set for the platform; he built the plugin architecture and migration tooling that made it achievable, letting the engine be swapped without a rebuild. VICA launched in December 2020.</p>
+<p>In 2018, two decades into his career, he went back to school for the methods that had displaced the ones he knew: four months full-time at a machine learning bootcamp. As a Smart Nation Fellow at GovTech he then led the team that built VICA, the Singapore government’s conversational-AI platform, which replaced the earlier Ask Jamie chatbots. He chose its NLP engine by benchmarking eight commercial platforms against a common test set rather than by reputation. Engine-agnosticism was a requirement set for the platform; he built the plugin architecture and migration tooling that made it achievable, letting the engine be swapped without a rebuild. VICA launched in December 2020.</p>
 <p>He was not an outsider who learned AI, but a domain expert who went back to being a beginner in the technique. That is why these patterns were discovered rather than theorized — and why none of it is a prerequisite. The argument is not that the author is exceptional, but that the method can be handed to anyone.</p>
 <p>He lives in Singapore, runs BrightRaven.ai, an AI consulting firm, and gives pro bono talks on AI in Singapore schools.</p>
 <p><em>More: linkedin.com/in/bertrandlee · <a href="https://www.tech.gov.sg/technews/a-conversation-with-bertrand-lee/">“A Conversation with Bertrand Lee,” GovTech Tech News</a></em></p>
@@ -304,6 +335,8 @@ ul.task-list li input[type="checkbox"] {
 <p><strong>One correction to make plainly: platform capabilities are the least durable thing in this book, and free tiers are not paid tiers.</strong> What a platform can’t do this quarter, it may do next quarter — and the reverse. Every capability-dependent pattern carries a dated, tier-specific note (see the Platform Compatibility appendix), and you should re-check it against your platform’s current state before you trust it. There’s a pattern in this book for exactly that check — [SCF-07], Connector Discovery: ask your platform what it can actually do, don’t assume from memory.</p>
 <p>A final constraint, and the one that earns all the rest. This book pushes you to push AI systems hard — but that’s only earned through the rigor of the audit, not a substitute for it. In medicine, law, and money, the line is absolute and non-negotiable: the AI prepares your questions; it does not make your decision. You and your credentialed professional do that. Skip the audit and the boldness is just recklessness wearing a better outfit. Keep it, and it’s a disciplined workflow.</p>
 <p>One more thing I didn’t expect: how it would feel. Building these systems put me back into a state I hadn’t felt in twenty years — the flow of my early days as a software engineer, looking up to find the whole day gone. I wasn’t optimizing prompts; I was architecting a system, and architecture absorbs you in a way a single answer never does. I’m not promising you’ll feel it too — flow is personal, and these tools frustrate as often as they deliver — but it’s the honest reason I kept going, and it’s worth naming: the payoff lives in the building, not in the asking.</p>
+<p>There is a second thing I didn’t expect, and it explains where most of these patterns actually came from. Very few were designed. They were noticed — a figure I couldn’t trace back to its source, a file that reported success and hadn’t saved, a rule followed on Monday and quietly dropped by Thursday. Each time, I worked the fix out <em>with</em> the model that had just made the mistake, and then handed the result to the rest of what I’ve come to think of as my team: the separate threads I keep for separate domains, each one inheriting a correction it never had to earn for itself.</p>
+<p>What made that work was a division of labour I’ve not had with a machine before. I brought the creativity, the domain judgement, and the reality checks — the insistence that a claim be true rather than merely plausible. They brought technical depth and a breadth of reference no person can hold. Neither half would have produced this catalogue alone, and I’m fairly sure neither half could have. The closest word I have for it is a mind meld, which I’m aware sounds like exactly the kind of overclaim this book warns against. I’ll defend it anyway: the patterns in here are the residue of that collaboration, not a report about it.</p>
 <section id="how-to-self-classify-borrowed-from-skill-rating-systems-like-pickleballs-dupr" class="level3" data-number="3.0.1">
 <h3 data-number="3.0.1" class="anchored" data-anchor-id="how-to-self-classify-borrowed-from-skill-rating-systems-like-pickleballs-dupr"><span class="header-section-number">3.0.1</span> How to Self-Classify (borrowed from skill-rating systems like pickleball’s DUPR)</h3>
 <p>Rating systems like DUPR don’t ask how long you’ve played or how confident you feel — they ask what you can actually do, against opponents who can do the same. Borrow that logic here. Classify yourself by what you’ve <em>done</em>, not by time spent or how expert you feel.</p>
@@ -312,10 +345,16 @@ ul.task-list li input[type="checkbox"] {
 <li><p><strong>Beginner.</strong> You’ve used a chat AI for straightforward questions and drafts — or maybe this is your first real conversation with one at all; either way, you’re in exactly the right place. <em>Self-check:</em> have you ever made the model interview you before it answers, or asked it to argue against your own draft instead of approving it? If you haven’t tried either, start here — the Beginner section is built for exactly this gap.</p></li>
 <li><p><strong>Intermediate.</strong> You use AI daily for real work — documents, day-to-day tasks — but nothing you’ve built with it outlives the conversation that created it. <em>Self-check:</em> if this chat ended right now, would anything of value survive in a file you control? If no, the Intermediate section closes that gap.</p></li>
 <li><p><strong>Advanced.</strong> You’ve built at least one durable, file-based system: a memory registry, a spreadsheet with self-checking guards, a handoff brief a stranger could pick up cold. <em>Self-check:</em> could a brand-new AI thread, with zero chat history, continue your project today from a file alone? If yes, you’re here — the Advanced section is your home base.</p></li>
-<li><p><strong>Elite.</strong> You run governed, multi-thread operations where verification is structurally independent of the work being verified — not just promised, but enforced. <em>Self-check:</em> do you have a standing rule that no model can grade its own output, and has that rule ever actually caught a real error? If yes, the Elite section (gated, and now you know why) is where you already live.</p></li>
-<li><p><strong>Scaffolder.</strong> Not a harder degree of the same skill — a change in what you produce. You’ve noticed a recurring solution to a recurring problem in your own practice, one that isn’t in this book, and written it down so someone else can use it. The Scaffolder section at the end is a short guide to doing exactly that.</p></li>
+<li><p><strong>Elite.</strong> You govern a system rather than build one: verification is structurally independent of the work being verified — not just promised, but enforced. <em>Self-check:</em> do you have a standing rule that no model can grade its own output, and has that rule ever actually caught a real error? If yes, the Elite section (gated, and now you know why) is where you already live. <strong>Six of its seven patterns work in a single chat window</strong>; only [GOV-07] needs more than one thread, and says so.</p></li>
 </ol>
-<p><strong>One honest note matching the registry’s own tags:</strong> every numbered pattern is assigned to Beginner, Intermediate, Advanced or Elite. The first three are what a single practitioner does or builds alone; the Elite patterns are labeled Elite, not because they’re harder in the same sense, but because they describe <em>governing a system</em>, not building one — the pyramid’s gated top rung. Scaffolder isn’t a pattern label at all; it’s what you become when you stop following this catalog and start adding to it.</p>
+<p><strong>The four tiers above are a reading order. They end there.</strong></p>
+<p><strong>One honest note matching the registry’s own tags:</strong> every numbered pattern is assigned to Beginner, Intermediate, Advanced or Elite. The first three are what a single practitioner does or builds alone; the Elite patterns are labeled Elite, not because they’re harder in the same sense, but because they describe <em>governing a system</em>, not building one — the pyramid’s gated top rung.</p>
+</section>
+<section id="and-then-theres-a-different-axis-entirely" class="level3" data-number="3.0.2">
+<h3 data-number="3.0.2" class="anchored" data-anchor-id="and-then-theres-a-different-axis-entirely"><span class="header-section-number">3.0.2</span> And then there’s a different axis entirely</h3>
+<p><strong>Pattern Finder is not a fifth tier.</strong> It’s a <em>role</em> — something you do with competence, rather than a measure of how much you have. You’ve noticed a recurring solution to a recurring problem in your own practice, one that isn’t in this book, and written it down so someone else can use it. The section at the end is a short guide to doing exactly that.</p>
+<p><strong>You don’t graduate into it, and you don’t need to be Elite to get there.</strong> A beginner who notices something real and writes it down clearly has done the thing. Someone who has read every pattern here and never found one of their own hasn’t — and that’s a perfectly good place to stay.</p>
+<p><strong>It’s also not the only role.</strong> Two others show up in practice, and this edition doesn’t cover them: <strong>Team Builder</strong>, if your work splits across enough domains that you end up running more than one thread; and <strong>Thread Grower</strong>, if you deepen a single thread over months until it holds context a fresh one couldn’t. Most people will only ever wear one of the three hats, and one is enough. The collective name for wearing any of them is <strong>Scaffolder</strong> — which is where this book gets its title.</p>
 <p>Here’s how to build that infrastructure.</p>
 <hr>
 </section>
@@ -327,19 +366,21 @@ ul.task-list li input[type="checkbox"] {
 <p>To Claude (Anthropic), my AI co-author. The writing, editing, research, and building in this book happened across hundreds of hours of collaborative sessions. The work is mine; the partnership made it possible.</p>
 <p>To Gemini (Google), ChatGPT (OpenAI), and DeepSeek — the AI co-reviewers whose independent review rounds challenged, tested, and sharpened every pattern in this catalogue.</p>
 <hr>
-<hr>
 <section id="introduction" class="level2" data-number="4.1">
 <h2 data-number="4.1" class="anchored" data-anchor-id="introduction"><span class="header-section-number">4.1</span> INTRODUCTION</h2>
 <p>There is a colleague available to you now who has no fear of your reaction, no stake in your good opinion, and no memory of the argument you had last week. That absence — call it <strong>The Zero-Stakes Critic</strong> — is not a limitation of the tool; it is the whole advantage. A human reviewer calibrates criticism against the relationship it might damage. An AI has no relationship to protect, which means it can be exactly as blunt as the problem requires, every time, without cost. This book leans on that advantage constantly — see [ONR-02] for where it first shows up as a technique, and watch for it again wherever a pattern asks the model to argue against you rather than agree with you.</p>
 <section id="how-this-book-is-organized" class="level3" data-number="4.1.1">
 <h3 data-number="4.1.1" class="anchored" data-anchor-id="how-this-book-is-organized"><span class="header-section-number">4.1.1</span> How This Book Is Organized</h3>
-<p><strong>The book is arranged by skill tier, because that is the order to read it in.</strong> Five tier sections — Beginner, Intermediate, Advanced, Elite, Scaffolder. The first four contain patterns, each resting on the one below; the fifth teaches contribution.</p>
+<p><strong>The book is arranged by skill tier, because that is the order to read it in.</strong> Four tier sections — Beginner, Intermediate, Advanced, Elite — each resting on the one below. A fifth section, <strong>Pattern Finder</strong>, contains no patterns: it teaches contribution, and it is a role rather than a rung.</p>
 <p><strong>Read one section, then stop.</strong> Come back when it feels automatic. You do not need to read this book front to back, and you shouldn’t: a beginner who pushes to the end spends most of their time on infrastructure for problems they haven’t hit yet, and the patterns read as ceremony rather than as answers.</p>
 <p><strong>Within a tier, patterns are grouped by category</strong> — the ID prefix: <code>ONR</code> On-Ramps · <code>SCF</code> Foundation · <code>PRAC</code> Practices · <code>ARC</code> Architecture · <code>GOV</code> Governance · <code>SAFE</code> Safety. A category can appear at more than one tier, because some safety rules are the first thing a beginner needs while others are advanced infrastructure. If you want the category view instead of the tier view, the <strong>Patterns at a Glance</strong> appendix lists all fifty that way.</p>
 <p><strong>IDs are permanent and never renumber.</strong> Display order is cosmetic, and a pattern’s number tells you nothing about where it sits or how hard it is. Gaps in the numbering are expected and carry no meaning — a retired or never-written ID is left empty rather than backfilled.</p>
-<p><strong>Scaffolder, the fifth section, has no patterns at all.</strong> It isn’t a harder degree of the same skill — it’s a change in what you produce, from applying this catalog to adding to it. See “How to Self-Classify” in the Preface.</p>
+<p><strong>Pattern Finder, the fifth section, has no patterns at all.</strong> It isn’t a harder degree of the same skill — it’s a change in what you produce, from applying this catalog to adding to it, and it sits on a different axis from the four tiers. See “How to Self-Classify” in the Preface.</p>
 <p><strong>Try it right now, not just read about it:</strong> you can upload this file directly into a ChatGPT, Gemini, or Claude conversation and ask it to walk you through any pattern, or even test one on a real task with you on the spot. The book is written to be handed to the tool it describes — see “Where This Goes” for the fuller version of this idea.</p>
 <p><strong>Most of this has a lineage.</strong> Very little here is unprecedented in computing — the moves have names in distributed systems, software engineering and security, some of them decades old. Where a pattern has a known ancestor, its entry says so in a <strong>Lineage</strong> line. That isn’t a hedge. Knowing that your memory registry is paging, or that your one-writer rule is leader-based replication, tells you where to look when it breaks and what someone else already learned the hard way. What’s uncommon isn’t the mechanism — it’s who’s doing it by hand, alone, in a chat window.</p>
+<p><strong>The form is borrowed, and the debt is worth naming.</strong> A pattern catalog — a recurring problem, a recurring solution, a name you can say out loud to another practitioner — comes from architecture by way of software engineering, and most directly from the <em>Design Patterns</em> book of 1994. What that book did for object-oriented design, this one attempts for working with an AI in a chat window: not new inventions, but recurring moves given names, so they can be recognised, taught and argued about. The names are the point. A technique you cannot name is one you cannot deliberately reach for.</p>
+<p><strong>And this book covers one part of the problem, not all of it.</strong> Its subject is workflow and architecture — how work is structured, where state lives, what checks exist and who runs them. <strong>It is not a book about prompting.</strong> Wording, phrasing, few-shot examples, chain-of-thought and the rest are a real and separate craft, well covered elsewhere, and a reader who wants to be good at this needs both. Where a pattern here depends on how something is asked, it says so and points onward. <strong>Treat this as the architecture half of a two-part education, and read something on prompt engineering alongside it.</strong></p>
+<p><strong>There may be more on the way.</strong> A more comprehensive guide — something closer to a hitchhiker’s guide to the whole galaxy of working with AI, beginner to fluent, in one place — is the kind of problem this author can’t leave alone. Nothing here promises it, or when. But if this book closes one gap for you, know that the others are visible from here too.</p>
 <p><strong>And pattern catalogs for AI already exist</strong> — prompt-pattern collections in the academic literature, design-pattern books for people building applications and agents, UX pattern libraries for people designing chat interfaces. All of them are written for builders. This book is for the person on the other side of that interface: no code, no framework, no API key, just a chat window and work that matters. That is a different problem with a different failure set, and it is the gap this book is trying to fill.</p>
 <p><strong>A second marker, ★, means don’t skip this one.</strong> It flags the few patterns that quietly unlock several others. The Swap Disk Protocol ([ARC-01]) is the clearest example: once your project has durable, file-based memory, a dozen Advanced patterns become easy instead of theoretical.</p>
 <hr>
@@ -353,18 +394,7 @@ ul.task-list li input[type="checkbox"] {
 </blockquote>
 <p><strong>Why a second channel, and not a second look.</strong> The failure this guards against isn’t that a model lies. It’s that a model’s account of what it just did is generated the same way as everything else it generates — from the conversation, not from an inspection of the world. Ask whether a file saved and you get a fluent, plausible answer that was never checked against a file system. The report and the reality are produced by different processes, and only one of them involves looking.</p>
 <p>So a write is not done until a <em>different</em> read confirms it: a different tool, a direct metadata lookup, the folder listing itself. And “a different model” is not automatically independent — two models can share a blind spot. Independence is a property of the evidence channel, not the brand.</p>
-<p><em>(This principle was briefly filed as a numbered pattern, <code>[GOV-05]</code>. It was promoted here because it is the spine, not a step. — DECIDED)</em></p>
 <hr>
-</section>
-<section id="privacy-attribution-rule-governs-all-drafting" class="level3" data-number="4.1.3">
-<h3 data-number="4.1.3" class="anchored" data-anchor-id="privacy-attribution-rule-governs-all-drafting"><span class="header-section-number">4.1.3</span> Privacy &amp; Attribution Rule (governs all drafting)</h3>
-<ul>
-<li><strong>The author is public.</strong> Real name and professional background appear in “About the Author,” which precedes the Preface so the reader knows who is speaking before they begin.</li>
-<li><strong>All use cases are genericized wherever generic terms protect privacy.</strong> The <em>method</em> is shown; identifying specifics are abstracted or mapped to a neutral vertical. The financial work becomes “personal investing and long-term financial planning”; a collection becomes “a personal collection”; and so on. <strong>Wealth signals are scrubbed</strong> — no net-worth figures, no “family office,” “high-stakes governance,” “complex/multi-jurisdictional assets,” “estate,” or “veto threshold” language that would let a reader infer the author is wealthy. Net worth stays private. Genericization also serves the mission — an abstracted case transfers to the reader’s own domain more readily than a specific one.</li>
-<li><strong>The medical thread is abstracted hardest</strong> — “a serious medical condition,” “a hospital admission”; never the diagnosis or specific clinical detail, even where the specifics are known and authentic.</li>
-<li><strong>Third parties stay abstracted until galley-phase consent</strong> — human reviewers, physicians, family. (Named only with their explicit permission, given this is a free, public, forkable book.)</li>
-<li><em>Consciously accepted trade-off:</em> a named author attached to a genericized case is not fully anonymized — a determined reader could link author to example. The rule protects the sensitive <em>specifics</em> (numbers, diagnosis, others’ identities), not the association between the author and the general activity.</li>
-</ul>
 <hr>
 
 
@@ -460,11 +490,6 @@ ul.task-list li input[type="checkbox"] {
           if (link.dataset.originalHref !== undefined) {
             link.href = link.dataset.originalHref;
           }
-            // target, if specified
-            link.setAttribute("target", "_blank");
-            if (link.getAttribute("rel") === null) {
-              link.setAttribute("rel", "noopener");
-            }
         }
       }
     function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
@@ -792,4 +817,4 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-</body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/bertrandlee/scaffolders-playbook/blob/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li></ul></div></div></div></footer></body></html>

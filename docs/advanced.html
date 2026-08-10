@@ -42,7 +42,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-ac077c1e730dfeb5e42400639d17284e.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-672462fdcb365bbc6454bd413249eca7.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-50350f0ef67c465fd9d66d9ebf741958.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -74,7 +74,7 @@ ul.task-list li input[type="checkbox"] {
 
 </head>
 
-<body class="nav-sidebar docked quarto-light">
+<body class="nav-sidebar floating quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -95,11 +95,11 @@ ul.task-list li input[type="checkbox"] {
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="./">The Scaffolder’s Playbook</a> 
-        <div class="sidebar-tools-main tools-wide">
+        <div class="sidebar-tools-main">
     <a href="https://github.com/bertrandlee/scaffolders-playbook" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
     <div class="dropdown">
       <a href="" title="Download" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Download"><i class="bi bi-download"></i></a>
@@ -114,23 +114,6 @@ ul.task-list li input[type="checkbox"] {
             <a class="dropdown-item sidebar-tools-main-item" href="./The-Scaffolder-s-Playbook.epub">
               <i class="bi bi-journal pe-1"></i>
             Download ePub
-            </a>
-          </li>
-      </ul>
-    </div>
-    <div class="dropdown">
-      <a href="" title="Share" id="quarto-navigation-tool-dropdown-1" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Share"><i class="bi bi-share"></i></a>
-      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-1">
-          <li>
-            <a class="dropdown-item sidebar-tools-main-item" href="https://twitter.com/intent/tweet?url=|url|">
-              <i class="bi bi-twitter pe-1"></i>
-            Twitter
-            </a>
-          </li>
-          <li>
-            <a class="dropdown-item sidebar-tools-main-item" href="https://www.linkedin.com/sharing/share-offsite/?url=|url|">
-              <i class="bi bi-linkedin pe-1"></i>
-            LinkedIn
             </a>
           </li>
       </ul>
@@ -213,7 +196,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#the-decoupling-charter-the-bright-line" id="toc-the-decoupling-charter-the-bright-line" class="nav-link" data-scroll-target="#the-decoupling-charter-the-bright-line"><span class="header-section-number">4.3.1</span> The Decoupling Charter (The Bright Line)</a></li>
   </ul></li>
   </ul>
-</nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/bertrandlee/scaffolders-playbook/blob/main/advanced.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -238,6 +221,11 @@ ul.task-list li input[type="checkbox"] {
 
 
 <p><em>Twelve patterns for durable, file-based systems that survive across threads, models and months.</em></p>
+<blockquote class="blockquote">
+<p><strong>Read this if</strong> you have built at least one durable, file-based system — a memory registry, a spreadsheet with self-checking guards, a handoff a stranger could pick up cold. The test: could a brand-new AI thread, with no chat history at all, continue your project today from a file alone? If yes, this is your home base.</p>
+<p><strong>Skip it if</strong> you cannot yet answer that test with a yes. Read Intermediate first — these patterns assume the files already exist.</p>
+</blockquote>
+<p><strong>★ means: read this one even if you skip the rest of the section.</strong> It flags the patterns that most change what the others can do.</p>
 <p>This is where the book stops being about conversations and starts being about artifacts. Nearly everything here assumes you have hit the failure it prevents at least once; if a pattern reads as unnecessary ceremony, you probably have not yet, and it will keep.</p>
 <section id="practices" class="level2" data-number="4.1">
 <h2 data-number="4.1" class="anchored" data-anchor-id="practices"><span class="header-section-number">4.1</span> Practices</h2>
@@ -346,7 +334,7 @@ If the transcribed row count does not match the control total, or if you cannot 
 <li><strong>Benefit:</strong> Catches errors invisible to the model that made them, because a different training lineage doesn’t share the same blind spot.</li>
 <li><strong>Apply:</strong> Draft with one model family; hand the output to another and instruct it to attack assumptions, hunt logic gaps, and find dropped constraints. <em>“This was drafted by a different model. Attack it: find the overclaim, the missing constraint, the case where it breaks.”</em></li>
 <li><strong>Guardrail:</strong> This is <em>diversification</em> of error, not elimination. The reviewer can be confidently wrong and steamroll a correct point, and overlapping training means “both agree” is weaker evidence than it feels. Weigh the review; don’t rubber-stamp it.</li>
-<li><strong>Related:</strong> → Structured Mutual Verification, Intentional Model Routing</li>
+<li><strong>Related:</strong> → Structured Mutual Verification, Match the Model to the Job</li>
 <li><strong>Lineage:</strong> N-version programming and design diversity; multi-agent debate. ARIS (arXiv 2605.03042) makes cross-lineage adversarial review a default and names its failure mode: plausible unsupported success.</li>
 </ul>
 </section>
@@ -416,7 +404,7 @@ If the transcribed row count does not match the control total, or if you cannot 
 </section>
 <section id="a-copy-you-edit-isnt-a-backup" class="level3" data-number="4.2.7">
 <h3 data-number="4.2.7" class="anchored" data-anchor-id="a-copy-you-edit-isnt-a-backup"><span class="header-section-number">4.2.7</span> A Copy You Edit Isn’t a Backup</h3>
-<p><em>A copy you edit isn’t a backup.</em> <em>(cross-reference: <code>[ARC-08]</code> · <strong>Advanced</strong> — new in this edition)</em></p>
+<p><em>A copy you edit isn’t a backup.</em> <em>(cross-reference: <code>[ARC-08]</code> · <strong>Advanced</strong>)</em></p>
 <p>You duplicate a working file for safety, then keep editing both copies — and six months later they silently disagree, and neither one is obviously the backup. Making backup copies feels safe, but a copy you edit is a liability, not a backup. The resolution: match the copy to the risk you’re actually guarding against.</p>
 <ul>
 <li><strong>Analogy:</strong> A spare tyre in the boot is a backup. One you also drive on is just a second tyre, wearing out differently.</li>
@@ -429,7 +417,7 @@ If the transcribed row count does not match the control total, or if you cannot 
 </section>
 <section id="resolve-standing-instructions-by-rule-not-by-name" class="level3" data-number="4.2.8">
 <h3 data-number="4.2.8" class="anchored" data-anchor-id="resolve-standing-instructions-by-rule-not-by-name"><span class="header-section-number">4.2.8</span> Resolve Standing Instructions by Rule, Not by Name</h3>
-<p><em>Tell it to find the latest file — don’t name one file forever.</em> <em>(cross-reference: <code>[ARC-09]</code> · <strong>Advanced</strong> — new in this edition)</em></p>
+<p><em>Tell it to find the latest file — don’t name one file forever.</em> <em>(cross-reference: <code>[ARC-09]</code> · <strong>Advanced</strong>)</em></p>
 <p>A standing instruction that hard-codes a specific filename (“always read <code>project_v4.md</code>”) rots the moment a <code>v5</code> appears. The instruction should carry a <em>rule</em> for finding the current file, never a frozen pointer to one version.</p>
 <ul>
 <li><strong>Analogy:</strong> “Take the top folder from the in-tray” keeps working. “Take the blue folder” stops the day someone buys green ones.</li>
@@ -440,7 +428,7 @@ If the transcribed row count does not match the control total, or if you cannot 
 <li><strong>Lineage:</strong> late binding and indirection; symbolic links and aliases.</li>
 </ul>
 <blockquote class="blockquote">
-<p><strong>The multi-agent memory spine.</strong> Seven patterns together let an AI-maintained document system survive months of multi-thread use without drifting into incoherence: the Swap Disk Protocol is <em>storage</em>; Structured Handoff Briefs is the <em>read-path</em>; the Single-Writer Reconciliation Pattern is the <em>write-path</em>; Archived Versions is <em>history</em>; Reconcile-to-Primary-Source is <em>correctness</em>; Right Copy Right Shelf is <em>redundancy discipline</em>; Resolve by Rule Not Name is <em>pointer hygiene</em>. The same spine production software relies on — storage, read, write, version history, redundancy, pointer resolution, and reconciliation to ground truth — applied to documents an AI maintains. Treat an AI-maintained document like production code <em>and</em> like an audited ledger: one writer, reviewed changes, versioned history, rollback, and periodic reconciliation back to source, because a faithfully-preserved wrong number is still wrong.</p>
+<p><strong>The multi-agent memory spine.</strong> Seven patterns together let an AI-maintained document system survive months of multi-thread use without drifting into incoherence: the Swap Disk Protocol is <em>storage</em>; Structured Handoff Briefs is the <em>read-path</em>; the Single-Writer Reconciliation Pattern is the <em>write-path</em>; Archived Versions is <em>history</em>; Recheck the Record Against the Original is <em>correctness</em>; A Copy You Edit Isn’t a Backup is <em>redundancy discipline</em>; Resolve by Rule Not Name is <em>pointer hygiene</em>. The same spine production software relies on — storage, read, write, version history, redundancy, pointer resolution, and reconciliation to ground truth — applied to documents an AI maintains. Treat an AI-maintained document like production code <em>and</em> like an audited ledger: one writer, reviewed changes, versioned history, rollback, and periodic reconciliation back to source, because a faithfully-preserved wrong number is still wrong.</p>
 </blockquote>
 <hr>
 </section>
@@ -552,11 +540,6 @@ If the transcribed row count does not match the control total, or if you cannot 
           if (link.dataset.originalHref !== undefined) {
             link.href = link.dataset.originalHref;
           }
-            // target, if specified
-            link.setAttribute("target", "_blank");
-            if (link.getAttribute("rel") === null) {
-              link.setAttribute("rel", "noopener");
-            }
         }
       }
     function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
@@ -887,4 +870,4 @@ If the transcribed row count does not match the control total, or if you cannot 
 
 
 
-</body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/bertrandlee/scaffolders-playbook/blob/main/advanced.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li></ul></div></div></div></footer></body></html>

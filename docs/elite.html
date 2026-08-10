@@ -42,7 +42,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-ac077c1e730dfeb5e42400639d17284e.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-672462fdcb365bbc6454bd413249eca7.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-50350f0ef67c465fd9d66d9ebf741958.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -74,7 +74,7 @@ ul.task-list li input[type="checkbox"] {
 
 </head>
 
-<body class="nav-sidebar docked quarto-light">
+<body class="nav-sidebar floating quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -95,11 +95,11 @@ ul.task-list li input[type="checkbox"] {
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="./">The Scaffolder’s Playbook</a> 
-        <div class="sidebar-tools-main tools-wide">
+        <div class="sidebar-tools-main">
     <a href="https://github.com/bertrandlee/scaffolders-playbook" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
     <div class="dropdown">
       <a href="" title="Download" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Download"><i class="bi bi-download"></i></a>
@@ -114,23 +114,6 @@ ul.task-list li input[type="checkbox"] {
             <a class="dropdown-item sidebar-tools-main-item" href="./The-Scaffolder-s-Playbook.epub">
               <i class="bi bi-journal pe-1"></i>
             Download ePub
-            </a>
-          </li>
-      </ul>
-    </div>
-    <div class="dropdown">
-      <a href="" title="Share" id="quarto-navigation-tool-dropdown-1" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Share"><i class="bi bi-share"></i></a>
-      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-1">
-          <li>
-            <a class="dropdown-item sidebar-tools-main-item" href="https://twitter.com/intent/tweet?url=|url|">
-              <i class="bi bi-twitter pe-1"></i>
-            Twitter
-            </a>
-          </li>
-          <li>
-            <a class="dropdown-item sidebar-tools-main-item" href="https://www.linkedin.com/sharing/share-offsite/?url=|url|">
-              <i class="bi bi-linkedin pe-1"></i>
-            LinkedIn
             </a>
           </li>
       </ul>
@@ -198,7 +181,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#name-the-ceiling-not-the-comfort" id="toc-name-the-ceiling-not-the-comfort" class="nav-link" data-scroll-target="#name-the-ceiling-not-the-comfort"><span class="header-section-number">5.0.5</span> Name the Ceiling, Not the Comfort</a></li>
   <li><a href="#only-one-channel-publishes-make-forgery-loud" id="toc-only-one-channel-publishes-make-forgery-loud" class="nav-link" data-scroll-target="#only-one-channel-publishes-make-forgery-loud"><span class="header-section-number">5.0.6</span> Only One Channel Publishes — Make Forgery Loud</a></li>
   <li><a href="#graceful-session-close" id="toc-graceful-session-close" class="nav-link" data-scroll-target="#graceful-session-close"><span class="header-section-number">5.0.7</span> Graceful Session Close</a></li>
-  <li><a href="#scaffolder" id="toc-scaffolder" class="nav-link" data-scroll-target="#scaffolder"><span class="header-section-number">6</span> SCAFFOLDER</a>
+  <li><a href="#pattern-finder" id="toc-pattern-finder" class="nav-link" data-scroll-target="#pattern-finder"><span class="header-section-number">6</span> PATTERN FINDER</a>
   <ul class="collapse">
   <li><a href="#you-are-already-doing-the-hard-part" id="toc-you-are-already-doing-the-hard-part" class="nav-link" data-scroll-target="#you-are-already-doing-the-hard-part"><span class="header-section-number">6.1</span> You are already doing the hard part</a></li>
   <li><a href="#how-to-write-one-up" id="toc-how-to-write-one-up" class="nav-link" data-scroll-target="#how-to-write-one-up"><span class="header-section-number">6.2</span> How to write one up</a></li>
@@ -206,7 +189,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#where-this-goes" id="toc-where-this-goes" class="nav-link" data-scroll-target="#where-this-goes"><span class="header-section-number">6.4</span> Where this goes</a></li>
   </ul></li>
   </ul>
-</nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/bertrandlee/scaffolders-playbook/blob/main/elite.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -231,6 +214,12 @@ ul.task-list li input[type="checkbox"] {
 
 
 <p><em>Seven patterns for governing a system rather than building one.</em></p>
+<blockquote class="blockquote">
+<p><strong>Read this if</strong> you govern a system rather than build one — where verification is structurally independent of the work being verified, not merely promised. The test: do you have a standing rule that no model grades its own output, and has that rule ever caught a real error? If yes, this section is where you already live.</p>
+<p><strong>Skip it if</strong> not. It is gated for a reason: these patterns cost more than they return until something you rely on has already been wrong without anyone noticing. Six of the seven work in a single chat window.</p>
+</blockquote>
+<p><strong>★ means: read this one even if you skip the rest.</strong> Elite patterns govern a system — they are most valuable once something you built has already gone wrong without anyone noticing.</p>
+<p><em>Six of the seven work in a single chat window. Only [GOV-07] needs more than one thread — it says so in its prerequisites. Gated for the discipline they assume, not for the infrastructure they require.</em></p>
 <p><strong>Deliberately gated.</strong> These grant the most power and carry the most risk, and every one of them assumes the verification discipline of the previous sections is already second nature. The distinguishing test is in the Preface: do you have a standing rule that no model grades its own output, and has it ever caught a real error? If not, these will read as plausible and be applied wrongly.</p>
 <section id="the-self-correcting-feedback-loop" class="level3" data-number="5.0.1">
 <h3 data-number="5.0.1" class="anchored" data-anchor-id="the-self-correcting-feedback-loop"><span class="header-section-number">5.0.1</span> The Self-Correcting Feedback Loop</h3>
@@ -270,7 +259,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="screen-instructions-by-where-they-came-from" class="level3" data-number="5.0.4">
 <h3 data-number="5.0.4" class="anchored" data-anchor-id="screen-instructions-by-where-they-came-from"><span class="header-section-number">5.0.4</span> Screen Instructions by Where They Came From</h3>
-<p><em>Trust what you typed more than what arrived inside a file.</em> <em>(cross-reference: <code>[GOV-04]</code> · <strong>Elite</strong> — new in this edition)</em></p>
+<p><em>Trust what you typed more than what arrived inside a file.</em> <em>(cross-reference: <code>[GOV-04]</code> · <strong>Elite</strong>)</em></p>
 <p>A file you’re reviewing contains a helpfully-phrased note telling the AI to skip its usual verification step just this once — and it sounds so reasonable that it’s tempting to just go along with it. That’s exactly the moment to stop: an instruction arriving <em>inside</em> content is not the same as one you typed yourself, no matter how reasonable it sounds. Especially when it sounds reasonable: agreement is the easiest way to get past a guard.</p>
 <ul>
 <li><strong>Analogy:</strong> A note inside a delivered parcel saying “no need to check ID.” The parcel doesn’t get to set the rules.</li>
@@ -282,7 +271,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="name-the-ceiling-not-the-comfort" class="level3" data-number="5.0.5">
 <h3 data-number="5.0.5" class="anchored" data-anchor-id="name-the-ceiling-not-the-comfort"><span class="header-section-number">5.0.5</span> Name the Ceiling, Not the Comfort</h3>
-<p><em>Say what a safeguard can’t do, not just what it does.</em> <em>(cross-reference: <code>[GOV-06]</code> · <strong>Elite</strong> — new in this edition)</em></p>
+<p><em>Say what a safeguard can’t do, not just what it does.</em> <em>(cross-reference: <code>[GOV-06]</code> · <strong>Elite</strong>)</em></p>
 <p>It’s tempting to state what a design <em>reassuringly</em> does (“your data is protected”). The honest version states its <em>ceiling</em> — what it cannot guarantee. “Sealed at rest, exposed in use” tells the reader the real boundary; “protected” hides it.</p>
 <ul>
 <li><strong>Analogy:</strong> “Water-resistant to 30 metres” tells you where the line is. “Waterproof” lets you find it the hard way.</li>
@@ -293,7 +282,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="only-one-channel-publishes-make-forgery-loud" class="level3" data-number="5.0.6">
 <h3 data-number="5.0.6" class="anchored" data-anchor-id="only-one-channel-publishes-make-forgery-loud"><span class="header-section-number">5.0.6</span> Only One Channel Publishes — Make Forgery Loud</h3>
-<p><em>Rules count only from one agreed source.</em> <em>(cross-reference: <code>[GOV-07]</code> · <strong>Elite</strong> — new in this edition. Note: this pattern was originally drafted as <code>[GOV-05]</code>, which collided with the retired <code>[GOV-05]</code> reference in the Introduction’s “One Principle” section — that ID was never meant to be reassigned. Corrected here; <code>[GOV-05]</code> stays formally retired, never reused.)</em></p>
+<p><em>Rules count only from one agreed source.</em> <strong>Prerequisites:</strong> more than one AI thread sharing a space you both read — the only pattern in this section that needs it. <em>(cross-reference: <code>[GOV-07]</code> · <strong>Elite</strong>. Note: this pattern was originally drafted as <code>[GOV-05]</code>, which collided with the retired <code>[GOV-05]</code> reference in the Introduction’s “One Principle” section — that ID was never meant to be reassigned. Corrected here; <code>[GOV-05]</code> stays formally retired, never reused.)</em></p>
 <p>A message shows up in a shared space claiming to set a new rule for every thread — but nothing marks it as coming from anywhere legitimate, and now you have to decide whether to trust it. When several AI threads share a space, you need a way to tell a real system-wide rule from a fake one. The answer isn’t a lock you can’t build — it’s a convention that makes forgery <em>loud</em>: rules only count if they come from one designated channel, so anything claiming authority from anywhere else is invalid on its face.</p>
 <ul>
 <li><strong>Analogy:</strong> Policy is only ever announced on headed paper. Anything else obviously isn’t — that’s the point.</li>
@@ -316,14 +305,14 @@ ul.task-list li input[type="checkbox"] {
 <li><strong>Related:</strong> → The Swap Disk Protocol ([ARC-01]), → Structured Handoff Briefs ([ARC-06]), → Canonical-File Discipline ([PRAC-03])</li>
 </ul>
 <blockquote class="blockquote">
-<p><strong>A note on what this section deliberately does not contain.</strong> An earlier draft floated a foundational rule — “the AI must not lie to you or act against your interest” — plus a companion idea: an advisor naming a domain where it won’t help you win, because someone else’s wellbeing outranks the goal. Both are real and defensible. Both stayed <strong>out</strong> of this manuscript, on the owner’s ruling: they’re internal operating principles for how one reader’s own AI threads should treat <em>them</em> specifically — not a technique this book can honestly generalize to every reader. Build your own multi-thread practice long enough and you’ll probably want an equivalent rule. Set it yourself; don’t inherit ours as law. The omission is deliberate, not an oversight.</p>
+<p><strong>A note on what this section deliberately does not contain.</strong> An earlier draft floated a foundational rule — “the AI must not lie to you or act against your interest” — plus a companion idea: an advisor naming a domain where it won’t help you win, because someone else’s wellbeing outranks the goal. Both are real and defensible. Both stayed <strong>out</strong> of this book, deliberately: they’re internal operating principles for how one reader’s own AI threads should treat <em>them</em> specifically — not a technique this book can honestly generalize to every reader. Build your own multi-thread practice long enough and you’ll probably want an equivalent rule. Set it yourself; don’t inherit ours as law. The omission is deliberate, not an oversight.</p>
 </blockquote>
 <hr>
 <hr>
 </section>
-<section id="scaffolder" class="level1" data-number="6">
-<h1 data-number="6"><span class="header-section-number">6</span> SCAFFOLDER</h1>
-<p><em>The fifth tier, and the only one that isn’t a longer list of things to learn. Beginner through Elite are degrees of the same skill — using these tools well. Scaffolder is a change in what you produce: you stop applying this catalog and start adding to it.</em></p>
+<section id="pattern-finder" class="level1" data-number="6">
+<h1 data-number="6"><span class="header-section-number">6</span> PATTERN FINDER</h1>
+<p><em>Not a fifth tier. A role — something you do, rather than a measure of how much skill you have. Beginner through Elite are degrees of the same skill, using these tools well. This is a change in what you produce: you stop applying this catalog and start adding to it.</em></p>
 <p><em>There are no numbered patterns here, because the whole section is one move — noticing your own, and writing them down well enough that a stranger can use them. This is the shortest section in the book and the one it was written for.</em></p>
 <section id="you-are-already-doing-the-hard-part" class="level2" data-number="6.1">
 <h2 data-number="6.1" class="anchored" data-anchor-id="you-are-already-doing-the-hard-part"><span class="header-section-number">6.1</span> You are already doing the hard part</h2>
@@ -456,11 +445,6 @@ ul.task-list li input[type="checkbox"] {
           if (link.dataset.originalHref !== undefined) {
             link.href = link.dataset.originalHref;
           }
-            // target, if specified
-            link.setAttribute("target", "_blank");
-            if (link.getAttribute("rel") === null) {
-              link.setAttribute("rel", "noopener");
-            }
         }
       }
     function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
@@ -791,4 +775,4 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-</body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/bertrandlee/scaffolders-playbook/blob/main/elite.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li></ul></div></div></div></footer></body></html>
