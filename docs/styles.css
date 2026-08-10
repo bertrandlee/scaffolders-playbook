@@ -1,0 +1,4 @@
+/* Hide the manual print TOC on the web — sidebar navigation replaces it */
+section#table-of-contents {
+  display: none;
+}
