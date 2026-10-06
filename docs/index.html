@@ -8,6 +8,7 @@
 
 <meta name="author" content="Bertrand Lee">
 <meta name="dcterms.date" content="2026-07-30">
+<meta name="description" content="Fifty patterns for people who work with AI in chat threads every day. Free, no signup.">
 
 <title>The Scaffolder’s Playbook</title>
 <style>
@@ -43,7 +44,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-ac077c1e730dfeb5e42400639d17284e.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-515366df6b7be079bcb0a04febeef555.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-0ce1251aabf9c7418f65dc7c9d225a81.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -71,9 +72,21 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","@id":"https://brightraven.ai/#organization","name":"BrightRaven","url":"https://brightraven.ai/","logo":"https://brightraven.ai/logo.png","sameAs":["https://www.linkedin.com/company/brightravenai"],"founder":{"@type":"Person","@id":"https://brightraven.ai/#bertrand-lee","name":"Bertrand Lee","url":"https://www.linkedin.com/in/bertrandlee/"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Book","name":"The Scaffolder's Playbook","url":"https://playbook.brightraven.ai/","inLanguage":"en","datePublished":"2026-07-30","isAccessibleForFree":true,"license":"https://creativecommons.org/licenses/by-nc/4.0/","author":{"@id":"https://brightraven.ai/#bertrand-lee"},"publisher":{"@id":"https://brightraven.ai/#bertrand-lee"},"sourceOrganization":{"@id":"https://brightraven.ai/#organization"}}
+</script>
 
 
 <link rel="stylesheet" href="styles.css">
+<meta property="og:title" content="The Scaffolder’s Playbook">
+<meta property="og:description" content="Fifty patterns for people who work with AI in chat threads every day. Free, no signup.">
+<meta property="og:site_name" content="The Scaffolder's Playbook">
+<meta name="twitter:title" content="The Scaffolder’s Playbook">
+<meta name="twitter:description" content="Fifty patterns for people who work with AI in chat threads every day. Free, no signup.">
+<meta name="twitter:card" content="summary">
 </head>
 
 <body class="nav-sidebar docked quarto-light">
@@ -102,24 +115,8 @@ ul.task-list li input[type="checkbox"] {
     <div class="sidebar-title mb-0 py-0">
       <a href="./">The Scaffolder’s Playbook</a> 
         <div class="sidebar-tools-main">
+    <a href="./The-Scaffolder-s-Playbook.pdf" title="Download PDF" class="quarto-navigation-tool px-1" aria-label="Download PDF"><i class="bi bi-file-pdf"></i></a>
     <a href="https://github.com/bertrandlee/scaffolders-playbook" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
-    <div class="dropdown">
-      <a href="" title="Download" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Download"><i class="bi bi-download"></i></a>
-      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
-          <li>
-            <a class="dropdown-item sidebar-tools-main-item" href="./The-Scaffolder-s-Playbook.pdf">
-              <i class="bi bi-file-pdf pe-1"></i>
-            Download PDF
-            </a>
-          </li>
-          <li>
-            <a class="dropdown-item sidebar-tools-main-item" href="./The-Scaffolder-s-Playbook.epub">
-              <i class="bi bi-journal pe-1"></i>
-            Download ePub
-            </a>
-          </li>
-      </ul>
-    </div>
 </div>
     </div>
       </div>
@@ -206,6 +203,11 @@ ul.task-list li input[type="checkbox"] {
 <h1 class="title">The Scaffolder’s Playbook</h1>
 </div>
 
+<div>
+  <div class="description">
+    Fifty patterns for people who work with AI in chat threads every day. Free, no signup.
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
@@ -316,7 +318,7 @@ ul.task-list li input[type="checkbox"] {
 <p>He started at Creative Technology, writing its first open-source Linux audio driver for the Sound Blaster Live! family and working with kernel developers to get it upstreamed. At Microsoft he was principal author of the USB Video Class specification — including the Extension Unit mechanism that let vendors add their own controls without breaking the generic driver — co-founded the USB Video Device Working Group with partners including Logitech, stayed through specification 1.0 in September 2003, and built Windows’ UVC driver. Twenty-three years later it is still a reason a webcam works when you plug it in: Windows, macOS and Linux provide built-in class support for compliant UVC devices, and Android supports external UVC cameras on conforming devices. It turns up well beyond webcams — conferencing systems, dashcams, drones, medical endoscopes, the tracking cameras inside VR headsets.</p>
 <p>His path into natural-language processing began at VoiceBox, building in-car voice assistants years before phones made them familiar — statistical NLP and grammar-driven parsing on embedded automotive hardware, before deep learning changed the field. He later led video-platform engineering at Panopto, in Seattle and Hong Kong.</p>
 <p>In 2018, two decades into his career, he went back to school for the methods that had displaced the ones he knew: four months full-time at a machine learning bootcamp. As a Smart Nation Fellow at GovTech he then led the team that built VICA, the Singapore government’s conversational-AI platform, which replaced the earlier Ask Jamie chatbots. He chose its NLP engine by benchmarking eight commercial platforms against a common test set rather than by reputation. Engine-agnosticism was a requirement set for the platform; he built the plugin architecture and migration tooling that made it achievable, letting the engine be swapped without a rebuild. VICA launched in December 2020.</p>
-<p>He was not an outsider who learned AI, but a domain expert who went back to being a beginner in the technique. That is why these patterns were discovered rather than theorized — and why none of it is a prerequisite. The argument is not that the author is exceptional, but that the method can be handed to anyone.</p>
+<p>He was not an outsider who learned AI, but a domain expert who went back to being a beginner in the technique. That is why these patterns were discovered rather than theorized — and why none of it is a prerequisite.</p>
 <p>He lives in Singapore, runs BrightRaven.ai, an AI consulting firm, and gives pro bono talks on AI in Singapore schools.</p>
 <p><em>More: linkedin.com/in/bertrandlee · <a href="https://www.tech.gov.sg/technews/a-conversation-with-bertrand-lee/">“A Conversation with Bertrand Lee,” GovTech Tech News</a></em></p>
 <hr>
@@ -325,6 +327,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="preface-why-i-wrote-this-book" class="level1" data-number="3">
 <h1 data-number="3"><span class="header-section-number">3</span> PREFACE: Why I Wrote This Book</h1>
+<p><strong>Who this book is for.</strong> If you work with AI in a chat window most days — thinking out loud with a model, turn by turn, with you in every turn — and you want to get better at it, this book is for you. It assumes some technical background and some familiarity with AI. It does not assume prompt-engineering skill; that is a separate craft, and a good guide is named below. Every pattern here was found in chat-thread work. None was found or tested in agent frameworks, AI coding tools or autonomous pipelines, where the unit of work is a run that completes without a human in it. If that is your work, some patterns may carry over; I have not tested which.</p>
 <p>I wrote this book because a frustration with my own investing and long-term financial planning — tracking requirements that span years, reconciling records scattered across accounts — accidentally taught me something too useful to keep to myself. The fix was simple: stop treating the AI like an oracle, start treating it like a durable external store. I took a spreadsheet that had grown into a mess of notes and made the model organize its own memory into a structured, human-auditable ledger. It worked. That day, I stopped one-shotting.</p>
 <p>This book does two jobs at once: it’s a manual for techniques that already work, and a method for finding the ones that don’t exist yet. Those aren’t in tension — the techniques here exist to train a discovery reflex, not just to be copied. Learn the foundations, improve on them, and put your own back into the commons.</p>
 <p><strong>This is workflow engineering, not prompt engineering — and the difference matters.</strong> Prompt engineering optimizes one question for one better answer; it operates at the level of the <em>turn</em>. Workflow engineering operates <em>above</em> the turn: the memory that outlives a conversation, the file that survives a thread, the check that fires on a future edit, the reconciliation that runs weeks later. It’s the same move software engineers call a design pattern — a recurring solution to a recurring problem that you don’t invent so much as <em>notice</em>. Work this way long enough and you’ll realize you’ve been using a structure that already has a name, or you’ll have quietly named one yourself. This book catalogs the ones I noticed. Its bigger job is teaching you to notice your own.</p>
@@ -343,7 +346,7 @@ ul.task-list li input[type="checkbox"] {
 <p>Rating systems like DUPR don’t ask how long you’ve played or how confident you feel — they ask what you can actually do, against opponents who can do the same. Borrow that logic here. Classify yourself by what you’ve <em>done</em>, not by time spent or how expert you feel.</p>
 <p>Proficiency frameworks for AI exist — Anthropic’s AI Fluency work, and several published level ladders. This is not one of them. The tiers here are a reading order for a catalog, not an assessment: they tell you which patterns will make sense next, not how good you are.</p>
 <ol type="1">
-<li><p><strong>Beginner.</strong> You’ve used a chat AI for straightforward questions and drafts — or maybe this is your first real conversation with one at all; either way, you’re in exactly the right place. <em>Self-check:</em> have you ever made the model interview you before it answers, or asked it to argue against your own draft instead of approving it? If you haven’t tried either, start here — the Beginner section is built for exactly this gap.</p></li>
+<li><p><strong>Beginner.</strong> You’ve used a chat AI for straightforward questions and drafts. <em>Self-check:</em> have you ever made the model interview you before it answers, or asked it to argue against your own draft instead of approving it? If you haven’t tried either, start here — the Beginner section is built for exactly this gap.</p></li>
 <li><p><strong>Intermediate.</strong> You use AI daily for real work — documents, day-to-day tasks — but nothing you’ve built with it outlives the conversation that created it. <em>Self-check:</em> if this chat ended right now, would anything of value survive in a file you control? If no, the Intermediate section closes that gap.</p></li>
 <li><p><strong>Advanced.</strong> You’ve built at least one durable, file-based system: a memory registry, a spreadsheet with self-checking guards, a handoff brief a stranger could pick up cold. <em>Self-check:</em> could a brand-new AI thread, with zero chat history, continue your project today from a file alone? If yes, you’re here — the Advanced section is your home base.</p></li>
 <li><p><strong>Elite.</strong> You govern a system rather than build one: verification is structurally independent of the work being verified — not just promised, but enforced. <em>Self-check:</em> do you have a standing rule that no model can grade its own output, and has that rule ever actually caught a real error? If yes, the Elite section (gated, and now you know why) is where you already live. <strong>Six of its seven patterns work in a single chat window</strong>; only [GOV-07] needs more than one thread, and says so.</p></li>
@@ -477,7 +480,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/playbook\.brightraven\.ai");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
@@ -814,8 +817,21 @@ ul.task-list li input[type="checkbox"] {
   </div>
 </nav>
 </div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+<p>Who is behind this: <a href="https://brightraven.ai/">BrightRaven</a></p>
+<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/bertrandlee/scaffolders-playbook/blob/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li></ul></div></div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
 
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/bertrandlee/scaffolders-playbook/blob/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li></ul></div></div></div></footer></body></html>
+</body></html>
