@@ -96,7 +96,7 @@ In 2018, two decades into his career, he went back to school for the methods tha
 
 He was not an outsider who learned AI, but a domain expert who went back to being a beginner in the technique. That is why these patterns were discovered rather than theorized — and why none of it is a prerequisite.
 
-He lives in Singapore, runs BrightRaven.ai, an AI consulting firm, and gives pro bono talks on AI in Singapore schools.
+He lives in Singapore, runs BrightRaven.ai, a non-commercial venture, and offers AI consulting services.
 
 *More: [linkedin.com/in/bertrandlee](https://www.linkedin.com/in/bertrandlee/) · ["A Conversation with Bertrand Lee," GovTech Tech News](https://www.tech.gov.sg/technews/a-conversation-with-bertrand-lee/)*
 
